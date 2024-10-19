@@ -1,0 +1,20 @@
+# ninja log v6
+1	18	1729323079377182272	build.ninja	80a44ff4108b224d
+5	2792	1729321864341615822	CMakeFiles/simple_cpp_database.dir/LoaderData.cpp.o	99062e4eb6e679e2
+2	17	1729280379047584765	CMakeFiles/simple_cpp_database.dir/Book.cpp.o	4c71d54a0618ce6e
+4	3008	1729321864340615810	CMakeFiles/simple_cpp_database.dir/main.cpp.o	ccdec74cbabd465
+4	115	1729322125890624675	simple_cpp_database	e7bcb601db962288
+5	2905	1729321864341615822	CMakeFiles/simple_cpp_database.dir/SaverData.cpp.o	64ce5e6bac17d381
+0	17	1729323079377182272	build.ninja	80a44ff4108b224d
+2	2800	1729323079384182371	CMakeFiles/simple_cpp_database.dir/LoaderData.cpp.o	99062e4eb6e679e2
+2	2885	1729323079384182371	CMakeFiles/simple_cpp_database.dir/SaverData.cpp.o	64ce5e6bac17d381
+2	2945	1729323079384182371	CMakeFiles/simple_cpp_database.dir/main.cpp.o	ccdec74cbabd465
+2945	3046	1729323082327224252	simple_cpp_database	e7bcb601db962288
+2	2836	1729323381440313266	CMakeFiles/simple_cpp_database.dir/SaverData.cpp.o	64ce5e6bac17d381
+2	2871	1729323381440313266	CMakeFiles/simple_cpp_database.dir/LoaderData.cpp.o	99062e4eb6e679e2
+2	2966	1729323381440313266	CMakeFiles/simple_cpp_database.dir/main.cpp.o	ccdec74cbabd465
+2966	3065	1729323384404352423	simple_cpp_database	e7bcb601db962288
+3	2761	1729323573281807900	CMakeFiles/simple_cpp_database.dir/LoaderData.cpp.o	99062e4eb6e679e2
+3	2866	1729323573281807900	CMakeFiles/simple_cpp_database.dir/SaverData.cpp.o	64ce5e6bac17d381
+2	2939	1729323573281807900	CMakeFiles/simple_cpp_database.dir/main.cpp.o	ccdec74cbabd465
+2939	3041	1729323576217845525	simple_cpp_database	e7bcb601db962288
