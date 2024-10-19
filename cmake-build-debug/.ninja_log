@@ -18,3 +18,7 @@
 3	2866	1729323573281807900	CMakeFiles/simple_cpp_database.dir/SaverData.cpp.o	64ce5e6bac17d381
 2	2939	1729323573281807900	CMakeFiles/simple_cpp_database.dir/main.cpp.o	ccdec74cbabd465
 2939	3041	1729323576217845525	simple_cpp_database	e7bcb601db962288
+2	2876	1729324814391912900	CMakeFiles/simple_cpp_database.dir/SaverData.cpp.o	64ce5e6bac17d381
+2	2903	1729324814391912900	CMakeFiles/simple_cpp_database.dir/LoaderData.cpp.o	99062e4eb6e679e2
+2	3012	1729324814391912900	CMakeFiles/simple_cpp_database.dir/main.cpp.o	ccdec74cbabd465
+3012	3116	1729324817401945667	simple_cpp_database	e7bcb601db962288

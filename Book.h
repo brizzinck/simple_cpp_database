@@ -21,6 +21,10 @@ public:
     std::string Author;
     int Year;
     int ISBN;
+    float Price;
+    float Rating;
+    string Genre;
+
     Book(const int id, const std::string &name, const std::string &author, const int year, const int isbn)
         : Name(name), Author(author), Year(year), ISBN(isbn) {
         Id = id;
@@ -33,6 +37,12 @@ public:
         cin >> Author;
         cout << "Year" << endl;
         cin >> Year;
+        cout << "Price" << endl;
+        cin >> Price;
+        cout << "Rating" << endl;
+        cin >> Rating;
+        cout << "Genre" << endl;
+        cin >> Genre;
         cout << "ISBN" << endl;
         cin >> ISBN;
     }
@@ -40,6 +50,9 @@ public:
         ChangeData("Name", Name);
         ChangeData("Author", Author);
         ChangeData("Year", Year);
+        ChangeData("Price", Price);
+        ChangeData("Rating", Rating);
+        ChangeData("Genre", Genre);
         ChangeData("ISBN", ISBN);
     }
 
@@ -48,6 +61,9 @@ public:
         cout << "Name: " << Name << endl;
         cout << "Author: " << Author << endl;
         cout << "Year: " << Year << endl;
+        cout << "Price: " << Price << endl;
+        cout << "Rating: " << Rating << endl;
+        cout << "Genre: " << Genre << endl;
         cout << "ISBN: " << ISBN << endl;
     }
 
@@ -57,6 +73,9 @@ public:
         Author = data["author"];
         Year = data["year"];
         ISBN = data["isbn"];
+        Rating = data["rating"];
+        Genre = data["genre"];
+        Price = data["price"];
     }
 
     std::string GetPath() const override {
@@ -70,6 +89,9 @@ public:
         jsonData["author"] = Author;
         jsonData["year"] = Year;
         jsonData["isbn"] = ISBN;
+        jsonData["rating"] = Rating;
+        jsonData["price"] = Price;
+        jsonData["genre"] = Genre;
         return jsonData;
     }
     ~Book() {}

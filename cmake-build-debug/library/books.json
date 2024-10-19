@@ -1,93 +1,12 @@
 [
     {
-        "author": "Nikyto",
+        "author": "Steve",
+        "genre": "Horror",
         "id": 1,
-        "isbn": 1819242352,
-        "name": "Lox",
-        "year": 1900
-    },
-    {
-        "author": "Pisya",
-        "id": 2,
-        "isbn": 1234235423,
-        "name": "Dauyn",
-        "year": 1910
-    },
-    {
-        "author": "135",
-        "id": 3,
-        "isbn": 1,
-        "name": "1243",
-        "year": 56
-    },
-    {
-        "author": "5d",
-        "id": 4,
-        "isbn": 0,
-        "name": "123",
-        "year": 0
-    },
-    {
-        "author": "fc",
-        "id": 5,
-        "isbn": 0,
-        "name": "124",
-        "year": 0
-    },
-    {
-        "author": "er",
-        "id": 6,
-        "isbn": 0,
-        "name": "gfhr",
-        "year": 0
-    },
-    {
-        "author": "1",
-        "id": 7,
-        "isbn": 1,
-        "name": "1",
-        "year": 1
-    },
-    {
-        "author": "243",
-        "id": 8,
-        "isbn": 29098,
-        "name": "reter",
-        "year": 0
-    },
-    {
-        "author": "fd",
-        "id": 9,
-        "isbn": 30773,
-        "name": "1245",
-        "year": 0
-    },
-    {
-        "author": "egtf",
-        "id": 10,
-        "isbn": 112,
-        "name": "df",
-        "year": 1
-    },
-    {
-        "author": "asdf",
-        "id": 11,
-        "isbn": 14454,
-        "name": "sdfg",
-        "year": 12
-    },
-    {
-        "author": "234",
-        "id": 12,
-        "isbn": 23,
-        "name": "23523",
-        "year": 234
-    },
-    {
-        "author": "LOX@",
-        "id": 13,
-        "isbn": 1314314,
-        "name": "LOX",
-        "year": 124
+        "isbn": 1283813480,
+        "name": "Car",
+        "price": 2000.0,
+        "rating": 3.299999952316284,
+        "year": 1911
     }
 ]
