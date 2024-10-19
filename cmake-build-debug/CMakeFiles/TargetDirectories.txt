@@ -1,3 +1,0 @@
-/home/skalse/Job/Cpp/simple_cpp_database/cmake-build-debug/CMakeFiles/simple_cpp_database.dir
-/home/skalse/Job/Cpp/simple_cpp_database/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/skalse/Job/Cpp/simple_cpp_database/cmake-build-debug/CMakeFiles/rebuild_cache.dir
