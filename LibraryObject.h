@@ -11,7 +11,7 @@ using namespace std;
 
 class LibraryObject : public ISaver, public ILoader{
 public:
-     mutable int Id;
+     int Id;
 
      LibraryObject() = default;
 
@@ -27,7 +27,7 @@ public:
      virtual void SetData() = 0;
      virtual void UpdateData() = 0;
 
-     void SetId(int id) const {
+     void SetId(int id) {
           this->Id = id;
      }
 
