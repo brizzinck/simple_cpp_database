@@ -2,7 +2,6 @@
 #include <nlohmann/json_fwd.hpp>
 #include <nlohmann/json.hpp>
 #include "LibraryObject.h"
-#include "ISaver.h"
 #ifndef BOOK_H
 #define BOOK_H
 
@@ -17,15 +16,15 @@ public:
             DisplayInfo();
     }
 
-    std::string Name;
-    std::string Author;
+    string Name;
+    string Author;
     int Year;
     int ISBN;
     float Price;
     float Rating;
     string Genre;
 
-    Book(const int id, const std::string &name, const std::string &author, const int year, const int isbn)
+    Book(const int id, const string &name, const string &author, const int year, const int isbn)
         : Name(name), Author(author), Year(year), ISBN(isbn) {
         Id = id;
     }
@@ -78,7 +77,7 @@ public:
         Price = data["price"];
     }
 
-    std::string GetPath() const override {
+    string GetPath() const override {
         return LibraryObject::GetPath() + "books.json";
     }
 

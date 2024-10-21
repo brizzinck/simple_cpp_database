@@ -4,7 +4,7 @@
 #include <nlohmann/json.hpp>
 using namespace std;
 
-void SaverData::Update(const LibraryObject &object, int index) {
+void SaverData::Update(LibraryObject &object, int index) {
     ifstream inFile(object.GetPath());
     nlohmann::json jsonData;
 

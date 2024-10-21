@@ -7,7 +7,7 @@ using namespace std;
 int main() {
     auto book = Book();
     auto book2 = Book();
-    LibraryObject *libraryObjects[] = { &book, &book2 };
+    LibraryObject *libraryObjects[] = { &book2, &book };
 
     while (true) {
         cout << "Enter an option: " << endl
