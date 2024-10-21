@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.29)
+cmake_minimum_required(VERSION 3.28.1)
 project(simple_cpp_database)
 
 set(CMAKE_CXX_STANDARD 20)
@@ -13,3 +13,5 @@ add_executable(simple_cpp_database main.cpp
         ILoader.h
         LibraryObject.h
 )
+find_package(nlohmann_json CONFIG REQUIRED)
+target_link_libraries(simple_cpp_database PRIVATE nlohmann_json::nlohmann_json)
