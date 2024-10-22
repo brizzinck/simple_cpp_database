@@ -1,13 +1,14 @@
 #include <iostream>
 #include "Book.h"
 #include "LoaderData.h"
+#include "Magazine.h"
 #include "SaverData.h"
 using namespace std;
 
 int main() {
     auto book = Book();
-    auto book2 = Book();
-    LibraryObject *libraryObjects[] = { &book2, &book };
+    auto magazine = Magazine();
+    LibraryObject *libraryObjects[] = { &book, &magazine };
 
     while (true) {
         cout << "Enter an option: " << endl
@@ -25,9 +26,11 @@ int main() {
 
         cout << "Which data? " << endl;
         int i = 0;
-        for (auto &lb : libraryObjects) {
-            if (dynamic_cast<Book*>(lb))
+        for (auto &object : libraryObjects) {
+            if (dynamic_cast<Book*>(object))
                 cout << ++i << " Book: " << endl;
+            else if (dynamic_cast<Magazine*>(object))
+                cout << ++i << " Magazine: " << endl;
             else
                 cout << ++i << " Unknown type" << endl;
         }
@@ -38,11 +41,11 @@ int main() {
 
         switch (choice) {
             case 1: {
-                LoaderData::ReadAllJSON(book.GetPath());
+                LoaderData::ReadAllJSON(currentObject->GetPath());
                 break;
             }
             case 2: {
-                book.SetData();
+                currentObject->SetData();
                 SaverData::Save(*currentObject);
                 break;
             }

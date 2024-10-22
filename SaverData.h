@@ -59,8 +59,8 @@ SaverData::Save(T &libraryObject) {
         cout << "File succeed create: " << path << endl;
     }
     libraryObject.SetId(lastIndex + 1);
-    nlohmann::json json_book = libraryObject.GetSaveData();
-    jsonData.push_back(json_book);
+    nlohmann::json json = libraryObject.GetSaveData();
+    jsonData.push_back(json);
     ofstream outFile(path);
     if (!outFile) {
         cerr << "Error open write file: " << path << endl;

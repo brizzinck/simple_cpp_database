@@ -24,10 +24,6 @@ public:
     float Rating;
     string Genre;
 
-    Book(const int id, const string &name, const string &author, const int year, const int isbn)
-        : Name(name), Author(author), Year(year), ISBN(isbn) {
-        Id = id;
-    }
     Book(){}
     void SetData() override {
         cout << "Name" << endl;
@@ -93,7 +89,7 @@ public:
         jsonData["genre"] = Genre;
         return jsonData;
     }
-    ~Book() {}
+    ~Book() override {}
 };
 
 #endif //BOOK_H
