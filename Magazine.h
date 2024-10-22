@@ -5,32 +5,32 @@
 #include "LibraryObject.h"
 
 
-class Magazine : public LibraryObject{
+class Magazine : public LibraryObject {
 public:
     string Name;
 
-    Magazine(const nlohmann::basic_json<> &data, bool display = true)
-    : LibraryObject(data, display) {
-        SelfLoader(data);
-        if (display)
-            DisplayInfo();
+    Magazine() {
     }
 
-    Magazine(const int id, const string &name)
-    : Name(name) {
-        Id = id;
+    string GetObjectName() const override {
+        return "Magazine";
     }
-    Magazine(){}
+
 
     string GetPath() const override {
         return LibraryObject::GetPath() + "magazine.json";
     }
 
-    void DisplayInfo() const override {
-        cout << "ID: " << Id << endl;
-        cout << "Name: " << Name << endl;
+    void DisplayHeaderInfo() const override {
+        cout << left << setw(10) << "ID" << "| "
+                  << setw(20) << "Name" << "| " << endl
+                  << "-------------------------------------------------------------------------"
+                     "-------------------------------------------------------------------------" << endl;
     }
 
+    void DisplayInfo() const override {
+        cout << left << setw(10) << Id << "| " << setw(20) << Name << "| " << endl;
+    }
     void SelfLoader(const nlohmann::basic_json<> &data) override {
         Id = data["id"];
         Name = data["name"];
@@ -51,9 +51,10 @@ public:
     void UpdateData() override {
         ChangeData("Name", Name);
     }
-    ~Magazine() override {}
-};
 
+    ~Magazine() override {
+    }
+};
 
 
 #endif //MAGAZINE_H

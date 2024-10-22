@@ -4,7 +4,6 @@
 #include <nlohmann/json.hpp>
 using namespace std;
 
-
 void SaverData::Save(LibraryObject &libraryObject) {
     string path = libraryObject.GetPath();
     nlohmann::json jsonData;
@@ -99,6 +98,8 @@ void SaverData::Update(LibraryObject &object, int index) {
     outFile.close();
 
     cout << "Data with index " << index << " succeed push!" << endl;
+    object.DisplayHeaderInfo();
+    object.DisplayInfo();
 }
 
 void SaverData::Delete(LibraryObject &object, int index) {

@@ -4,9 +4,9 @@
         "genre": "Horror",
         "id": 1,
         "isbn": 1283813480,
-        "name": "Car",
-        "price": 2000.0,
-        "rating": 3.299999952316284,
+        "name": "Moto",
+        "price": 1500.0,
+        "rating": 3.700000047683716,
         "year": 1911
     },
     {
@@ -20,13 +20,13 @@
         "year": 213
     },
     {
-        "author": "AU",
+        "author": "UK",
         "genre": "Romance",
         "id": 3,
         "isbn": 233125,
-        "name": "LOL",
-        "price": 12312.0,
-        "rating": 1.0,
-        "year": 123246
+        "name": "KEK",
+        "price": 199.0,
+        "rating": 5.0,
+        "year": 1918
     }
 ]

@@ -4,9 +4,9 @@
 
 class LoaderData {
 public:
-    static void ReadAllJSON(string name);
-    static void ReadByIndex(LibraryObject &object, int index);
+    static void LoadInConsoleAllData(LibraryObject &object, string name);
+
+    static void LoadInConsoleDataByIndex(LibraryObject &object, int index);
 };
 
 #endif //LOADERDATA_H
-

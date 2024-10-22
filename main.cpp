@@ -8,7 +8,7 @@ using namespace std;
 int main() {
     auto book = Book();
     auto magazine = Magazine();
-    LibraryObject *libraryObjects[] = { &book, &magazine };
+    LibraryObject *libraryObjects[] = {&book, &magazine};
 
     while (true) {
         cout << "Enter an option: " << endl
@@ -26,22 +26,15 @@ int main() {
 
         cout << "Which data? " << endl;
         int i = 0;
-        for (auto &object : libraryObjects) {
-            if (dynamic_cast<Book*>(object))
-                cout << ++i << " Book: " << endl;
-            else if (dynamic_cast<Magazine*>(object))
-                cout << ++i << " Magazine: " << endl;
-            else
-                cout << ++i << " Unknown type" << endl;
-        }
-
+        for (auto &object: libraryObjects)
+            cout << ++i << ". " << object->GetObjectName() << endl;
         cin >> i;
 
         LibraryObject *currentObject = libraryObjects[i - 1];
 
         switch (choice) {
             case 1: {
-                LoaderData::ReadAllJSON(currentObject->GetPath());
+                LoaderData::LoadInConsoleAllData(*currentObject, currentObject->GetPath());
                 break;
             }
             case 2: {
@@ -53,14 +46,14 @@ int main() {
                 cout << "How data view of index" << endl;
                 int index = 0;
                 cin >> index;
-                LoaderData::ReadByIndex(*currentObject, index);
+                LoaderData::LoadInConsoleDataByIndex(*currentObject, index);
                 break;
             }
             case 4: {
                 cout << "How data update of index" << endl;
                 int index = 0;
                 cin >> index;
-                LoaderData::ReadByIndex(*currentObject, index);
+                LoaderData::LoadInConsoleDataByIndex(*currentObject, index);
                 currentObject->UpdateData();
                 SaverData::Update(*currentObject, index);
                 break;

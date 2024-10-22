@@ -4,13 +4,14 @@
 #include <iostream>
 #include <nlohmann/json.hpp>
 using namespace std;
-void LoaderData::ReadAllJSON(string name) {
+
+void LoaderData::LoadInConsoleAllData(LibraryObject &object, string name) {
     ifstream inFile(name);
     nlohmann::json jsonData;
     if (inFile.is_open()) {
         try {
             inFile >> jsonData;
-        } catch (const nlohmann::json::parse_error& e) {
+        } catch (const nlohmann::json::parse_error &e) {
             cerr << "Error parsing JSON: " << e.what() << endl;
             return;
         }
@@ -24,19 +25,21 @@ void LoaderData::ReadAllJSON(string name) {
         cerr << "Invalid data format! A JSON array was expected!" << endl;
         return;
     }
-
-    for (const auto& item : jsonData)
-        cout << item.dump() << endl;
+    object.DisplayHeaderInfo();
+    for (const nlohmann::basic_json<> &data: jsonData) {
+        object.SelfLoader(data);
+        object.DisplayInfo();
+    }
 }
 
-void LoaderData::ReadByIndex(LibraryObject &object, int index) {
+void LoaderData::LoadInConsoleDataByIndex(LibraryObject &object, int index) {
     ifstream inFile(object.GetPath());
     nlohmann::json jsonData;
 
     if (inFile.is_open()) {
         try {
             inFile >> jsonData;
-        } catch (const nlohmann::json::parse_error& e) {
+        } catch (const nlohmann::json::parse_error &e) {
             cerr << "Error parsing JSON: " << e.what() << endl;
             return;
         }
@@ -52,9 +55,11 @@ void LoaderData::ReadByIndex(LibraryObject &object, int index) {
     }
 
     bool found = false;
-    for (const nlohmann::basic_json<> &item : jsonData)
+    for (const nlohmann::basic_json<> &item: jsonData)
         if (item["id"] == index) {
             object.SelfLoader(item);
+            object.DisplayHeaderInfo();
+            object.DisplayInfo();
             found = true;
             break;
         }

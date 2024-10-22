@@ -9,13 +9,6 @@ using namespace std;
 
 class Book final : public LibraryObject {
 public:
-    Book(const nlohmann::basic_json<> &data, bool display = true)
-        : LibraryObject(data, display) {
-        SelfLoader(data);
-        if (display)
-            DisplayInfo();
-    }
-
     string Name;
     string Author;
     int Year;
@@ -24,7 +17,9 @@ public:
     float Rating;
     string Genre;
 
-    Book(){}
+    Book() {
+    }
+
     void SetData() override {
         cout << "Name" << endl;
         cin >> Name;
@@ -41,6 +36,7 @@ public:
         cout << "ISBN" << endl;
         cin >> ISBN;
     }
+
     void UpdateData() override {
         ChangeData("Name", Name);
         ChangeData("Author", Author);
@@ -51,15 +47,28 @@ public:
         ChangeData("ISBN", ISBN);
     }
 
-    void DisplayInfo() const {
-        cout << "ID: " << Id << endl;
-        cout << "Name: " << Name << endl;
-        cout << "Author: " << Author << endl;
-        cout << "Year: " << Year << endl;
-        cout << "Price: " << Price << endl;
-        cout << "Rating: " << Rating << endl;
-        cout << "Genre: " << Genre << endl;
-        cout << "ISBN: " << ISBN << endl;
+    void DisplayHeaderInfo() const override {
+        cout << left << setw(10) << "ID" << "| "
+                  << setw(20) << "Name" << "| "
+                  << setw(20) << "Author" << "| "
+                  << setw(10) << "Year" << "| "
+                  << setw(10) << "Price" << "| "
+                  << setw(10) << "Rating" << "| "
+                  << setw(15) << "Genre" << "| "
+                  << setw(15) << "ISBN" << endl
+                  << "-------------------------------------------------------------------------"
+                     "-------------------------------------------------------------------------" << endl;
+    }
+
+    void DisplayInfo() const override {
+        cout << left << setw(10) << Id << "| "
+                  << setw(20) << Name << "| "
+                  << setw(20) << Author << "| "
+                  << setw(10) << Year << "| "
+                  << setw(10) << Price << "| "
+                  << setw(10) << Rating << "| "
+                  << setw(15) << Genre << "| "
+                  << setw(15) << ISBN << endl;
     }
 
     void SelfLoader(const nlohmann::basic_json<> &data) override {
@@ -77,6 +86,10 @@ public:
         return LibraryObject::GetPath() + "books.json";
     }
 
+    string GetObjectName() const override {
+        return "Book";
+    }
+
     nlohmann::json GetSaveData() const override {
         nlohmann::json jsonData;
         jsonData["id"] = Id;
@@ -89,7 +102,9 @@ public:
         jsonData["genre"] = Genre;
         return jsonData;
     }
-    ~Book() override {}
+
+    ~Book() override {
+    }
 };
 
 #endif //BOOK_H
