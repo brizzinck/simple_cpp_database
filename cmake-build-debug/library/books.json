@@ -18,5 +18,15 @@
         "price": 213.0,
         "rating": 123.0,
         "year": 213
+    },
+    {
+        "author": "AU",
+        "genre": "Romance",
+        "id": 3,
+        "isbn": 233125,
+        "name": "LOL",
+        "price": 12312.0,
+        "rating": 1.0,
+        "year": 123246
     }
 ]

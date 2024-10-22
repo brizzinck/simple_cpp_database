@@ -2,5 +2,13 @@
     {
         "id": 1,
         "name": "Posters"
+    },
+    {
+        "id": 2,
+        "name": "Arch"
+    },
+    {
+        "id": 3,
+        "name": "Ubuntu"
     }
 ]

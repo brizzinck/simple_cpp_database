@@ -37,3 +37,7 @@
 2902	3006	1729555365519086007	simple_cpp_database	67076a8a863cf0bf
 2	2927	1729555402450459248	CMakeFiles/simple_cpp_database.dir/main.cpp.o	ccdec74cbabd465
 2927	3030	1729555405375488647	simple_cpp_database	67076a8a863cf0bf
+2	1967	1729635021797312772	CMakeFiles/simple_cpp_database.dir/main.cpp.o	ccdec74cbabd465
+2	2911	1729635021797312772	CMakeFiles/simple_cpp_database.dir/LoaderData.cpp.o	99062e4eb6e679e2
+2	3060	1729635021797312772	CMakeFiles/simple_cpp_database.dir/SaverData.cpp.o	64ce5e6bac17d381
+3060	3170	1729635024855350289	simple_cpp_database	67076a8a863cf0bf
