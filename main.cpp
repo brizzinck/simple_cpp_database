@@ -6,8 +6,8 @@
 using namespace std;
 
 int main() {
-    auto book = Book();
-    auto magazine = Magazine();
+    Book book{};
+    Magazine magazine{};
     LibraryObject *libraryObjects[] = {&book, &magazine};
 
     while (true) {

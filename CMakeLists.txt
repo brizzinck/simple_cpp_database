@@ -14,6 +14,7 @@ add_executable(simple_cpp_database main.cpp
         LibraryObject.h
         Magazine.cpp
         Magazine.h
+        Book.cpp
 )
 find_package(nlohmann_json CONFIG REQUIRED)
 target_link_libraries(simple_cpp_database PRIVATE nlohmann_json::nlohmann_json)
