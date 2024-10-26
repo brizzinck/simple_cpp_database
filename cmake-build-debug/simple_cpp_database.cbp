@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="simple_cpp_database"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Users\;CMake Files\Users\lavri\;CMake Files\Users\lavri\.vcpkg-clion\;CMake Files\Users\lavri\.vcpkg-clion\vcpkg\;CMake Files\Users\lavri\.vcpkg-clion\vcpkg\scripts\;CMake Files\Users\lavri\.vcpkg-clion\vcpkg\scripts\buildsystems\;CMake Files\Users\lavri\.vcpkg-clion\vcpkg\installed\;CMake Files\Users\lavri\.vcpkg-clion\vcpkg\installed\x64-windows\;CMake Files\Users\lavri\.vcpkg-clion\vcpkg\installed\x64-windows\share\;CMake Files\Users\lavri\.vcpkg-clion\vcpkg\installed\x64-windows\share\nlohmann_json\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/job/C++/simple_cpp_database/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_cpp_database">
+				<Option output="D:/job/C++/simple_cpp_database/cmake-build-debug/simple_cpp_database.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/job/C++/simple_cpp_database/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/lavri/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_cpp_database"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_cpp_database/fast">
+				<Option output="D:/job/C++/simple_cpp_database/cmake-build-debug/simple_cpp_database.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/job/C++/simple_cpp_database/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/lavri/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_cpp_database/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/job/C++/simple_cpp_database/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/job/C++/simple_cpp_database/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/job/C++/simple_cpp_database/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/lavri/.vcpkg-clion/vcpkg/installed/x64-windows/share/nlohmann_json/nlohmann_json.natvis">
+			<Option target="simple_cpp_database"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/Book.cpp">
+			<Option target="simple_cpp_database"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/Book.h">
+			<Option target="simple_cpp_database"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/ILoader.h">
+			<Option target="simple_cpp_database"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/ISaver.h">
+			<Option target="simple_cpp_database"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/LibraryObject.cpp">
+			<Option target="simple_cpp_database"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/LibraryObject.h">
+			<Option target="simple_cpp_database"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/LoaderData.cpp">
+			<Option target="simple_cpp_database"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/LoaderData.h">
+			<Option target="simple_cpp_database"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/Magazine.cpp">
+			<Option target="simple_cpp_database"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/Magazine.h">
+			<Option target="simple_cpp_database"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/SaverData.cpp">
+			<Option target="simple_cpp_database"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/SaverData.h">
+			<Option target="simple_cpp_database"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/Validator.cpp">
+			<Option target="simple_cpp_database"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/Validator.h">
+			<Option target="simple_cpp_database"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/main.cpp">
+			<Option target="simple_cpp_database"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/Users/lavri/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake">
+			<Option virtualFolder="CMake Files\Users\lavri\.vcpkg-clion\vcpkg\scripts\buildsystems\"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/Users/lavri/.vcpkg-clion/vcpkg/installed/x64-windows/share/nlohmann_json/nlohmann_jsonConfig.cmake">
+			<Option virtualFolder="CMake Files\Users\lavri\.vcpkg-clion\vcpkg\installed\x64-windows\share\nlohmann_json\"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/Users/lavri/.vcpkg-clion/vcpkg/installed/x64-windows/share/nlohmann_json/nlohmann_jsonConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\Users\lavri\.vcpkg-clion\vcpkg\installed\x64-windows\share\nlohmann_json\"/>
+		</Unit>
+		<Unit filename="D:/job/C++/simple_cpp_database/Users/lavri/.vcpkg-clion/vcpkg/installed/x64-windows/share/nlohmann_json/nlohmann_jsonTargets.cmake">
+			<Option virtualFolder="CMake Files\Users\lavri\.vcpkg-clion\vcpkg\installed\x64-windows\share\nlohmann_json\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

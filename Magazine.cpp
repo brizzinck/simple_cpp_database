@@ -10,13 +10,13 @@ string Magazine::GetPath() const {
 
 void Magazine::DisplayHeaderInfo() const {
     cout << left << setw(10) << "ID" << "| "
-            << setw(20) << "Name" << "| " << endl
-            << "-------------------------------------------------------------------------"
-            "-------------------------------------------------------------------------" << endl;
+            << setw(15) << "Name" << "| " << endl
+            << "-----------------------------------------------------------"
+            "--------------------------------------------------------------" << endl;
 }
 
 void Magazine::DisplayInfo() const {
-    cout << left << setw(10) << Id << "| " << setw(20) << Name << "| " << endl;
+    cout << left << setw(10) << Id << "| " << setw(15) << Name << "| " << endl;
 }
 
 void Magazine::SelfLoader(const nlohmann::basic_json<> &data) {
