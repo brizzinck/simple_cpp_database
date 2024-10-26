@@ -79,6 +79,18 @@ build CMakeFiles/simple_cpp_database.dir/Book.cpp.o: CXX_COMPILER__simple_cpp_da
   OBJECT_DIR = CMakeFiles/simple_cpp_database.dir
   OBJECT_FILE_DIR = CMakeFiles/simple_cpp_database.dir
 
+build CMakeFiles/simple_cpp_database.dir/Validator.cpp.o: CXX_COMPILER__simple_cpp_database_unscanned_Debug /home/skalse/Job/Cpp/simple_cpp_database/Validator.cpp || cmake_object_order_depends_target_simple_cpp_database
+  DEP_FILE = CMakeFiles/simple_cpp_database.dir/Validator.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/simple_cpp_database.dir
+  OBJECT_FILE_DIR = CMakeFiles/simple_cpp_database.dir
+
+build CMakeFiles/simple_cpp_database.dir/LibraryObject.cpp.o: CXX_COMPILER__simple_cpp_database_unscanned_Debug /home/skalse/Job/Cpp/simple_cpp_database/LibraryObject.cpp || cmake_object_order_depends_target_simple_cpp_database
+  DEP_FILE = CMakeFiles/simple_cpp_database.dir/LibraryObject.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/simple_cpp_database.dir
+  OBJECT_FILE_DIR = CMakeFiles/simple_cpp_database.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target simple_cpp_database
@@ -87,7 +99,7 @@ build CMakeFiles/simple_cpp_database.dir/Book.cpp.o: CXX_COMPILER__simple_cpp_da
 #############################################
 # Link the executable simple_cpp_database
 
-build simple_cpp_database: CXX_EXECUTABLE_LINKER__simple_cpp_database_Debug CMakeFiles/simple_cpp_database.dir/main.cpp.o CMakeFiles/simple_cpp_database.dir/SaverData.cpp.o CMakeFiles/simple_cpp_database.dir/LoaderData.cpp.o CMakeFiles/simple_cpp_database.dir/Magazine.cpp.o CMakeFiles/simple_cpp_database.dir/Book.cpp.o
+build simple_cpp_database: CXX_EXECUTABLE_LINKER__simple_cpp_database_Debug CMakeFiles/simple_cpp_database.dir/main.cpp.o CMakeFiles/simple_cpp_database.dir/SaverData.cpp.o CMakeFiles/simple_cpp_database.dir/LoaderData.cpp.o CMakeFiles/simple_cpp_database.dir/Magazine.cpp.o CMakeFiles/simple_cpp_database.dir/Book.cpp.o CMakeFiles/simple_cpp_database.dir/Validator.cpp.o CMakeFiles/simple_cpp_database.dir/LibraryObject.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/simple_cpp_database.dir
   POST_BUILD = :

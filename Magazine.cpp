@@ -1,5 +1,5 @@
 #include "Magazine.h"
-
+#include "LibraryObject.cpp"
 string Magazine::GetObjectName() const {
     return "Magazine";
 }
@@ -32,10 +32,16 @@ nlohmann::json Magazine::GetSaveData() const {
 }
 
 void Magazine::SetData() {
-    cout << "Name" << endl;
-    cin >> Name;
+    SetName();
+}
+
+void Magazine::SetName() {
+    Name = Validator::GetValidatedString(
+        "Name",
+        [](const string &input) { return !input.empty(); },
+        "Invalid input. Please enter a valid name.");
 }
 
 void Magazine::UpdateData() {
-    ChangeData("Name", Name);
+    LibraryObject::ChangeData("Name", Name, [this]() { this->SetName(); });
 }

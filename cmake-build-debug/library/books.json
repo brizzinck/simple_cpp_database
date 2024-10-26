@@ -1,32 +1,32 @@
 [
     {
-        "author": "Steve",
-        "genre": "Horror",
+        "author": "Sergey",
+        "genre": "IT",
         "id": 1,
-        "isbn": 1283813480,
-        "name": "Moto",
-        "price": 1500.0,
-        "rating": 3.700000047683716,
-        "year": 1911
+        "isbn": "2321312315721",
+        "name": "Pattern C#",
+        "price": 2000.0,
+        "rating": 4.0,
+        "year": 2015
     },
     {
-        "author": "12321",
-        "genre": "123",
+        "author": "Game Dev",
+        "genre": "Play",
         "id": 2,
-        "isbn": 123,
-        "name": "123412",
-        "price": 213.0,
-        "rating": 123.0,
-        "year": 213
+        "isbn": "3567122534733",
+        "name": "Metro",
+        "price": 19065.0,
+        "rating": 4.0,
+        "year": 2010
     },
     {
-        "author": "UK",
-        "genre": "Romance",
+        "author": "Vlad",
+        "genre": "Science",
         "id": 3,
-        "isbn": 233125,
-        "name": "KEK",
-        "price": 199.0,
+        "isbn": "1216738998094",
+        "name": "Sigma Book",
+        "price": 10.0,
         "rating": 5.0,
-        "year": 1918
+        "year": 2020
     }
 ]
