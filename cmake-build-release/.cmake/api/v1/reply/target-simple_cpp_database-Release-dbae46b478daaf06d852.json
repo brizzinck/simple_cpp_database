@@ -2,47 +2,43 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "simple_cpp_database.exe"
-		},
-		{
-			"path" : "simple_cpp_database.pdb"
+			"path" : "simple_cpp_database"
 		}
 	],
-	"backtrace" : 2,
+	"backtrace" : 1,
 	"backtraceGraph" : 
 	{
 		"commands" : 
 		[
-			"_add_executable",
 			"add_executable",
+			"include_directories",
 			"target_link_libraries"
 		],
 		"files" : 
 		[
-			"C:/Users/lavri/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
 		[
 			{
-				"file" : 1
-			},
-			{
-				"command" : 1,
-				"file" : 1,
-				"line" : 6,
-				"parent" : 0
+				"file" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 598,
-				"parent" : 1
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
 			},
 			{
 				"command" : 2,
-				"file" : 1,
-				"line" : 23,
+				"file" : 0,
+				"line" : 25,
 				"parent" : 0
 			}
 		]
@@ -53,15 +49,14 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++20 -fdiagnostics-color=always"
+					"fragment" : "-O3 -DNDEBUG -std=gnu++20 -fdiagnostics-color=always"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
-					"isSystem" : true,
-					"path" : "C:/Users/lavri/.vcpkg-clion/vcpkg/installed/x64-windows/include"
+					"backtrace" : 2,
+					"path" : "/home/skalse/Job/Cpp/simple_cpp_database/header"
 				}
 			],
 			"language" : "CXX",
@@ -91,22 +86,18 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-O3 -DNDEBUG",
 				"role" : "flags"
 			},
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "simple_cpp_database",
-	"nameOnDisk" : "simple_cpp_database.exe",
+	"nameOnDisk" : "simple_cpp_database",
 	"paths" : 
 	{
 		"build" : ".",
@@ -140,103 +131,91 @@
 				10,
 				13
 			]
-		},
-		{
-			"name" : "",
-			"sourceIndexes" : 
-			[
-				15
-			]
 		}
 	],
 	"sources" : 
 	[
 		{
-			"backtrace" : 2,
+			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "src/main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 2,
-			"path" : "Book.h",
+			"backtrace" : 1,
+			"path" : "header/data/Book.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 2,
+			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "SaverData.cpp",
+			"path" : "src/logic/saver/SaverData.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 2,
-			"path" : "SaverData.h",
+			"backtrace" : 1,
+			"path" : "header/logic/saver/SaverData.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 2,
+			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "LoaderData.cpp",
+			"path" : "src/logic/loader/LoaderData.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 2,
-			"path" : "LoaderData.h",
+			"backtrace" : 1,
+			"path" : "header/logic/loader/LoaderData.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 2,
-			"path" : "ISaver.h",
+			"backtrace" : 1,
+			"path" : "header/logic/saver/ISaver.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 2,
-			"path" : "ILoader.h",
+			"backtrace" : 1,
+			"path" : "header/logic/loader/ILoader.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 2,
-			"path" : "LibraryObject.h",
+			"backtrace" : 1,
+			"path" : "header/data/LibraryObject.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 2,
+			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Magazine.cpp",
+			"path" : "src/data/Magazine.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 2,
-			"path" : "Magazine.h",
+			"backtrace" : 1,
+			"path" : "header/data/Magazine.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 2,
+			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Book.cpp",
+			"path" : "src/data/Book.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 2,
+			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Validator.cpp",
+			"path" : "src/logic/Validator.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 2,
-			"path" : "Validator.h",
+			"backtrace" : 1,
+			"path" : "header/logic/Validator.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 2,
+			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "LibraryObject.cpp",
+			"path" : "src/data/LibraryObject.cpp",
 			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 3,
-			"path" : "C:/Users/lavri/.vcpkg-clion/vcpkg/installed/x64-windows/share/nlohmann_json/nlohmann_json.natvis",
-			"sourceGroupIndex" : 2
 		}
 	],
 	"type" : "EXECUTABLE"

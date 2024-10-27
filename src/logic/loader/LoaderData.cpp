@@ -23,7 +23,7 @@ void LoaderData::LoadInConsoleAllData(LibraryObject &object, string name) {
     }
 
     if (!jsonData.is_array()) {
-        cerr << "Invalid data format! A JSON array was expected!" << endl;  // Перевірка, чи є дані у форматі масиву JSON
+        cerr << "Invalid data_impl format! A JSON array was expected!" << endl;  // Перевірка, чи є дані у форматі масиву JSON
         return;
     }
     object.DisplayHeaderInfo();  // Відображення заголовків таблиці для об'єкта
@@ -52,7 +52,7 @@ bool LoaderData::LoadInConsoleDataByIndex(LibraryObject &object, int index) {
     }
 
     if (!jsonData.is_array()) {
-        cerr << "Invalid data format! A JSON array was expected!" << endl;  // Перевірка, чи є дані у форматі масиву JSON
+        cerr << "Invalid data_impl format! A JSON array was expected!" << endl;  // Перевірка, чи є дані у форматі масиву JSON
         return false;
     }
 

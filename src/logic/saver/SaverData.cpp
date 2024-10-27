@@ -27,7 +27,7 @@ void SaverData::Save(LibraryObject &libraryObject) {
 
         // Перевірка, чи дані є масивом JSON
         if (!jsonData.is_array()) {
-            cerr << "Invalid data format! A JSON array was expected!" << endl;
+            cerr << "Invalid data_impl format! A JSON array was expected!" << endl;
             jsonData = nlohmann::json::array();
         }
 

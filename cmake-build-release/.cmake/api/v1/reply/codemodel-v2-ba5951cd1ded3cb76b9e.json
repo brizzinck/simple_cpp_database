@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.28.1"
@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "Release",
 			"projects" : 
 			[
 				{
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "simple_cpp_database::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-simple_cpp_database-Debug-90be0d196bccce62a743.json",
+					"jsonFile" : "target-simple_cpp_database-Release-dbae46b478daaf06d852.json",
 					"name" : "simple_cpp_database",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/job/C++/simple_cpp_database/cmake-build-debug",
-		"source" : "D:/job/C++/simple_cpp_database"
+		"build" : "/home/skalse/Job/Cpp/simple_cpp_database/cmake-build-release",
+		"source" : "/home/skalse/Job/Cpp/simple_cpp_database"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 7
 	}
 }

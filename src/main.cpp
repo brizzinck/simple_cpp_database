@@ -3,6 +3,7 @@
 #include "LoaderData.h"
 #include "Magazine.h"
 #include "SaverData.h"
+class LibraryObject;
 using namespace std;
 
 int main() {
@@ -16,11 +17,11 @@ int main() {
     while (true) {
         // Відображення опцій меню
         cout << "Enter an option: " << endl
-             << "1. View all data" << endl
-             << "2. Add data" << endl
-             << "3. View data of index" << endl
-             << "4. Update data of index" << endl
-             << "5. Delete data of index" << endl
+             << "1. View all data_impl" << endl
+             << "2. Add data_impl" << endl
+             << "3. View data_impl of index" << endl
+             << "4. Update data_impl of index" << endl
+             << "5. Delete data_impl of index" << endl
              << "0. Exit" << endl;
 
         int choice = 0;
@@ -31,7 +32,7 @@ int main() {
             return 0;
 
         // Запит користувача, який тип даних він хоче обробляти
-        cout << "Which data? " << endl;
+        cout << "Which data_impl? " << endl;
         int i = 0;
         for (LibraryObject* &object: libraryObjects)
             cout << ++i << ". " << object->GetObjectName() << endl;
@@ -55,7 +56,7 @@ int main() {
             }
             case 3: {
                 // Перегляд конкретних даних за індексом
-                cout << "How data view of index" << endl;
+                cout << "How data_impl view of index" << endl;
                 int index = 0;
                 cin >> index;
                 LoaderData::LoadInConsoleDataByIndex(*currentObject, index);
@@ -63,7 +64,7 @@ int main() {
             }
             case 4: {
                 // Оновлення даних за індексом
-                cout << "How data update of index" << endl;
+                cout << "How data_impl update of index" << endl;
                 LoaderData::LoadInConsoleAllData(*currentObject, currentObject->GetPath());
                 int index = 0;
                 cin >> index;
@@ -76,7 +77,7 @@ int main() {
             }
             case 5: {
                 // Видалення даних за індексом
-                cout << "How data of index delete?" << endl;
+                cout << "How data_impl of index delete?" << endl;
                 LoaderData::LoadInConsoleAllData(*currentObject, currentObject->GetPath());
                 int index;
                 cin >> index;
