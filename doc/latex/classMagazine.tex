@@ -1,0 +1,231 @@
+\doxysection{Magazine Class Reference}
+\hypertarget{classMagazine}{}\label{classMagazine}\index{Magazine@{Magazine}}
+
+
+Клас для представлення журналу в бібліотеці.  
+
+
+
+
+{\ttfamily \#include $<$Magazine.\+h$>$}
+
+Inheritance diagram for Magazine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMagazine}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classMagazine_abe08e09b156c7d4d29f30fad4cc468f0}{Get\+Object\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Отримує назву журналу. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classMagazine_a1460a8725fbdb349da8a4f42cc43cca8}{Get\+Path}} () const override
+\begin{DoxyCompactList}\small\item\em Отримує шлях до файлу з даними журналів. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMagazine_a358a2e28b1aa7872470cd5f0d0acf3f3}{Display\+Header\+Info}} () const override
+\begin{DoxyCompactList}\small\item\em Відображає заголовки таблиці про журнал. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMagazine_ab4b8488ab546ccbf218c1d36881fdcb5}{Display\+Info}} () const override
+\begin{DoxyCompactList}\small\item\em Відображає інформацію про журнал. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMagazine_a8c5684f64d231a7d69f8b183a965578b}{Self\+Loader}} (const nlohmann\+::basic\+\_\+json$<$$>$ \&data) override
+\begin{DoxyCompactList}\small\item\em Завантажує дані журналу з JSON. \end{DoxyCompactList}\item 
+nlohmann\+::json \mbox{\hyperlink{classMagazine_aab554c6bfdf23b22b1f0c3a1c762c463}{Get\+Save\+Data}} () const override
+\begin{DoxyCompactList}\small\item\em Отримує дані журналу для збереження у форматі JSON. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMagazine_aa8a1cd718a1820efbc68d2e3b476cfc2}{Set\+Data}} () override
+\begin{DoxyCompactList}\small\item\em Встановлює дані журналу. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMagazine_a9473f6a2393c4eac80fb99fd29bbdb97}{Update\+Data}} () override
+\begin{DoxyCompactList}\small\item\em Оновлює дані журналу. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classLibraryObject}{Library\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLibraryObject_aa2a3de231dc35fbd74a20bd6c5b040f0}{Library\+Object}} ()=default
+\begin{DoxyCompactList}\small\item\em Конструктор за замовчуванням. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLibraryObject_aaacc1553c33dd10585b822e0d0266bbb}{Set\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Встановлює ідентифікатор об\textquotesingle{}єкта. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classLibraryObject_a19675029dd7e0fb50066bbd1d68d0fb1}{\texorpdfstring{$\sim$}{\string~}\+Library\+Object}} ()=default
+\begin{DoxyCompactList}\small\item\em Віртуальний деструктор за замовчуванням. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classISaver}{ISaver}}}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classILoader}{ILoader}}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classMagazine_a6075a2188e57125f8f7ccec3582ef633}{Name}}
+\begin{DoxyCompactList}\small\item\em Назва журналу \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classLibraryObject}{Library\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classLibraryObject_a65337ca797e0437a506153354f2ec177}{Id}} = 0
+\begin{DoxyCompactList}\small\item\em Ідентифікатор об\textquotesingle{}єкта \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMagazine_a233916e179f11b468d4aeda77aa97683}{Set\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Встановлює назву журналу. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classLibraryObject}{Library\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\static void \mbox{\hyperlink{classLibraryObject_a081e2746131f28f60280a8e959855c65}{Change\+Data}} (const string \&name, T \&value, function$<$ void()$>$ set\+Data)
+\begin{DoxyCompactList}\small\item\em Змінює значення поля об\textquotesingle{}єкта. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Клас для представлення журналу в бібліотеці. 
+
+Містить основну інформацію про журнал, таку як назва. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classMagazine_a358a2e28b1aa7872470cd5f0d0acf3f3}\index{Magazine@{Magazine}!DisplayHeaderInfo@{DisplayHeaderInfo}}
+\index{DisplayHeaderInfo@{DisplayHeaderInfo}!Magazine@{Magazine}}
+\doxysubsubsection{\texorpdfstring{DisplayHeaderInfo()}{DisplayHeaderInfo()}}
+{\footnotesize\ttfamily \label{classMagazine_a358a2e28b1aa7872470cd5f0d0acf3f3} 
+void Magazine\+::\+Display\+Header\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Відображає заголовки таблиці про журнал. 
+
+
+
+Implements \mbox{\hyperlink{classLibraryObject_acb9733120e963a38e41acd8e2d21b924}{Library\+Object}}.
+
+\Hypertarget{classMagazine_ab4b8488ab546ccbf218c1d36881fdcb5}\index{Magazine@{Magazine}!DisplayInfo@{DisplayInfo}}
+\index{DisplayInfo@{DisplayInfo}!Magazine@{Magazine}}
+\doxysubsubsection{\texorpdfstring{DisplayInfo()}{DisplayInfo()}}
+{\footnotesize\ttfamily \label{classMagazine_ab4b8488ab546ccbf218c1d36881fdcb5} 
+void Magazine\+::\+Display\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Відображає інформацію про журнал. 
+
+
+
+Implements \mbox{\hyperlink{classLibraryObject_a6266e5c3b9eaa09e1f5e76e76eeb8021}{Library\+Object}}.
+
+\Hypertarget{classMagazine_abe08e09b156c7d4d29f30fad4cc468f0}\index{Magazine@{Magazine}!GetObjectName@{GetObjectName}}
+\index{GetObjectName@{GetObjectName}!Magazine@{Magazine}}
+\doxysubsubsection{\texorpdfstring{GetObjectName()}{GetObjectName()}}
+{\footnotesize\ttfamily \label{classMagazine_abe08e09b156c7d4d29f30fad4cc468f0} 
+string Magazine\+::\+Get\+Object\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Отримує назву журналу. 
+
+\begin{DoxyReturn}{Returns}
+Назва об\textquotesingle{}єкта. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classLibraryObject_a7439cc1a74723435561bb2591f193bfb}{Library\+Object}}.
+
+\Hypertarget{classMagazine_a1460a8725fbdb349da8a4f42cc43cca8}\index{Magazine@{Magazine}!GetPath@{GetPath}}
+\index{GetPath@{GetPath}!Magazine@{Magazine}}
+\doxysubsubsection{\texorpdfstring{GetPath()}{GetPath()}}
+{\footnotesize\ttfamily \label{classMagazine_a1460a8725fbdb349da8a4f42cc43cca8} 
+string Magazine\+::\+Get\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Отримує шлях до файлу з даними журналів. 
+
+\begin{DoxyReturn}{Returns}
+Шлях до файлу. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classLibraryObject_ad000ca64e38498dafe1f211c90082ff1}{Library\+Object}}.
+
+\Hypertarget{classMagazine_aab554c6bfdf23b22b1f0c3a1c762c463}\index{Magazine@{Magazine}!GetSaveData@{GetSaveData}}
+\index{GetSaveData@{GetSaveData}!Magazine@{Magazine}}
+\doxysubsubsection{\texorpdfstring{GetSaveData()}{GetSaveData()}}
+{\footnotesize\ttfamily \label{classMagazine_aab554c6bfdf23b22b1f0c3a1c762c463} 
+nlohmann\+::json Magazine\+::\+Get\+Save\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Отримує дані журналу для збереження у форматі JSON. 
+
+\begin{DoxyReturn}{Returns}
+Дані журналу у форматі JSON. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLibraryObject_a8872f79dd7cda9924d1f672b25f0e708}{Library\+Object}}.
+
+\Hypertarget{classMagazine_a8c5684f64d231a7d69f8b183a965578b}\index{Magazine@{Magazine}!SelfLoader@{SelfLoader}}
+\index{SelfLoader@{SelfLoader}!Magazine@{Magazine}}
+\doxysubsubsection{\texorpdfstring{SelfLoader()}{SelfLoader()}}
+{\footnotesize\ttfamily \label{classMagazine_a8c5684f64d231a7d69f8b183a965578b} 
+void Magazine\+::\+Self\+Loader (\begin{DoxyParamCaption}\item[{const nlohmann\+::basic\+\_\+json$<$$>$ \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Завантажує дані журналу з JSON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Дані у форматі JSON для завантаження. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classLibraryObject_aba89a56d812525e575d197a4af7304ca}{Library\+Object}}.
+
+\Hypertarget{classMagazine_aa8a1cd718a1820efbc68d2e3b476cfc2}\index{Magazine@{Magazine}!SetData@{SetData}}
+\index{SetData@{SetData}!Magazine@{Magazine}}
+\doxysubsubsection{\texorpdfstring{SetData()}{SetData()}}
+{\footnotesize\ttfamily \label{classMagazine_aa8a1cd718a1820efbc68d2e3b476cfc2} 
+void Magazine\+::\+Set\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Встановлює дані журналу. 
+
+
+
+Implements \mbox{\hyperlink{classLibraryObject_aed4cbede98a028f56655d37780793376}{Library\+Object}}.
+
+\Hypertarget{classMagazine_a233916e179f11b468d4aeda77aa97683}\index{Magazine@{Magazine}!SetName@{SetName}}
+\index{SetName@{SetName}!Magazine@{Magazine}}
+\doxysubsubsection{\texorpdfstring{SetName()}{SetName()}}
+{\footnotesize\ttfamily \label{classMagazine_a233916e179f11b468d4aeda77aa97683} 
+void Magazine\+::\+Set\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Встановлює назву журналу. 
+
+\Hypertarget{classMagazine_a9473f6a2393c4eac80fb99fd29bbdb97}\index{Magazine@{Magazine}!UpdateData@{UpdateData}}
+\index{UpdateData@{UpdateData}!Magazine@{Magazine}}
+\doxysubsubsection{\texorpdfstring{UpdateData()}{UpdateData()}}
+{\footnotesize\ttfamily \label{classMagazine_a9473f6a2393c4eac80fb99fd29bbdb97} 
+void Magazine\+::\+Update\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Оновлює дані журналу. 
+
+
+
+Implements \mbox{\hyperlink{classLibraryObject_aa07a58c2a03b97cbf327d21d64b5fcc2}{Library\+Object}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classMagazine_a6075a2188e57125f8f7ccec3582ef633}\index{Magazine@{Magazine}!Name@{Name}}
+\index{Name@{Name}!Magazine@{Magazine}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{classMagazine_a6075a2188e57125f8f7ccec3582ef633} 
+string Magazine\+::\+Name}
+
+
+
+Назва журналу 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+header/data/\mbox{\hyperlink{Magazine_8h}{Magazine.\+h}}\item 
+src/data/\mbox{\hyperlink{Magazine_8cpp}{Magazine.\+cpp}}\end{DoxyCompactItemize}

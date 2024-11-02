@@ -1,0 +1,50 @@
+\doxysection{Library\+Object.\+h}
+\hypertarget{LibraryObject_8h_source}{}\label{LibraryObject_8h_source}\index{header/data/LibraryObject.h@{header/data/LibraryObject.h}}
+\mbox{\hyperlink{LibraryObject_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ IOBJECT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ IOBJECT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ILoader_8h}{ILoader.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ISaver_8h}{ISaver.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <nlohmann/json.hpp>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLibraryObject_aa2a3de231dc35fbd74a20bd6c5b040f0}{LibraryObject}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classISaver}{ISaver}},\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classILoader}{ILoader}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classLibraryObject_a65337ca797e0437a506153354f2ec177}{Id}}\ =\ 0;\ \ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{classLibraryObject_aa2a3de231dc35fbd74a20bd6c5b040f0}{LibraryObject}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLibraryObject_acb9733120e963a38e41acd8e2d21b924}{DisplayHeaderInfo}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLibraryObject_a6266e5c3b9eaa09e1f5e76e76eeb8021}{DisplayInfo}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLibraryObject_aba89a56d812525e575d197a4af7304ca}{SelfLoader}}(\textcolor{keyword}{const}\ nlohmann::basic\_json<>\ \&data)\ \textcolor{keyword}{override}\ =\ 0;}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ nlohmann::json\ \mbox{\hyperlink{classLibraryObject_a8872f79dd7cda9924d1f672b25f0e708}{GetSaveData}}()\ \textcolor{keyword}{const\ override}\ =\ 0;}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classLibraryObject_ad000ca64e38498dafe1f211c90082ff1}{GetPath}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classLibraryObject_a7439cc1a74723435561bb2591f193bfb}{GetObjectName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLibraryObject_aed4cbede98a028f56655d37780793376}{SetData}}()\ =\ 0;}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLibraryObject_aa07a58c2a03b97cbf327d21d64b5fcc2}{UpdateData}}()\ =\ 0;}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLibraryObject_aaacc1553c33dd10585b822e0d0266bbb}{SetId}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ this-\/>\mbox{\hyperlink{classLibraryObject_a65337ca797e0437a506153354f2ec177}{Id}}\ =\ id;}
+\DoxyCodeLine{00077\ \ \ \ \ \}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLibraryObject_a081e2746131f28f60280a8e959855c65}{ChangeData}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&name,\ T\ \&value,\ function<\textcolor{keywordtype}{void}()>\ setData);}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classLibraryObject_a19675029dd7e0fb50066bbd1d68d0fb1}{\string~LibraryObject}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00094\ \};}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//IOBJECT\_H}}
+
+\end{DoxyCode}

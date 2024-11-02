@@ -1,0 +1,41 @@
+\doxysection{Library\+Object.\+cpp}
+\hypertarget{LibraryObject_8cpp_source}{}\label{LibraryObject_8cpp_source}\index{src/data/LibraryObject.cpp@{src/data/LibraryObject.cpp}}
+\mbox{\hyperlink{LibraryObject_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{LibraryObject_8h}{LibraryObject.h}}"{}}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Validator_8h}{Validator.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Дженерік\ метод\ для\ зміни\ значення\ поля}}
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ name\ -\/\ назва\ поля,\ яке\ потрібно\ змінити}}
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ value\ -\/\ поточне\ значення\ поля}}
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ setData\ -\/\ функція\ для\ встановлення\ нового\ значення}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00011\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLibraryObject_a081e2746131f28f60280a8e959855c65}{LibraryObject::ChangeData}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&name,\ T\ \&value,\ function<\textcolor{keywordtype}{void}()>\ setData)\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ cout\ <<\ name\ <<\ \textcolor{stringliteral}{"{}:\ "{}}\ <<\ value\ <<\ endl\ <<}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Change\ enter\ 1\ or\ don`t\ change\ enter\ 0:\ "{}}\ <<\ endl;}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ change\ =\ 0;}
+\DoxyCodeLine{00015\ \ \ \ \ cin\ >>\ change;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordflow}{switch}\ (change)\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 0:\ \ \textcolor{comment}{//\ Якщо\ користувач\ не\ хоче\ змінювати\ значення\ виходимо}}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 1:\ \ \textcolor{comment}{//\ Якщо\ користувач\ хоче\ змінити\ значення}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ setData();}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:\ \ \textcolor{comment}{//\ У\ випадку\ некоректного\ вводу\ виходимо}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00024\ \ \ \ \ \}}
+\DoxyCodeLine{00025\ \}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{comment}{//\ Отримання\ шляху\ до\ каталогу\ бібліотеки}}
+\DoxyCodeLine{00028\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classLibraryObject_ad000ca64e38498dafe1f211c90082ff1}{LibraryObject::GetPath}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}library/"{}};}
+\DoxyCodeLine{00030\ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{comment}{//\ Отримання\ назви\ об'єкта}}
+\DoxyCodeLine{00033\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classLibraryObject_a7439cc1a74723435561bb2591f193bfb}{LibraryObject::GetObjectName}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}LibraryObject"{}};}
+\DoxyCodeLine{00035\ \}}
+
+\end{DoxyCode}

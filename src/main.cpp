@@ -3,9 +3,17 @@
 #include "LoaderData.h"
 #include "Magazine.h"
 #include "SaverData.h"
+
 class LibraryObject;
+
 using namespace std;
 
+/**
+ * @brief Точка входу в програму.
+ *
+ * Запускає меню для керування об'єктами LibraryObject.
+ * @return Код завершення програми.
+ */
 int main() {
     // Створення об'єктів для запису та читання
     Book book{};
@@ -43,19 +51,14 @@ int main() {
 
         // Обробка різних опцій користувача на основі обраного пункту меню
         switch (choice) {
-            case 1: {
-                // Завантаження та відображення всіх даних
+            case 1:
                 LoaderData::LoadInConsoleAllData(*currentObject, currentObject->GetPath());
                 break;
-            }
-            case 2: {
-                // Додавання нових даних
+            case 2:
                 currentObject->SetData();
                 SaverData::Save(*currentObject);
                 break;
-            }
             case 3: {
-                // Перегляд конкретних даних за індексом
                 cout << "How data_impl view of index" << endl;
                 int index = 0;
                 cin >> index;
@@ -63,12 +66,10 @@ int main() {
                 break;
             }
             case 4: {
-                // Оновлення даних за індексом
                 cout << "How data_impl update of index" << endl;
                 LoaderData::LoadInConsoleAllData(*currentObject, currentObject->GetPath());
                 int index = 0;
                 cin >> index;
-                // Завантаження даних за індексом для перевірки їх існування перед оновленням
                 if (LoaderData::LoadInConsoleDataByIndex(*currentObject, index)) {
                     currentObject->UpdateData();
                     SaverData::Update(*currentObject, index);
@@ -76,7 +77,6 @@ int main() {
                 break;
             }
             case 5: {
-                // Видалення даних за індексом
                 cout << "How data_impl of index delete?" << endl;
                 LoaderData::LoadInConsoleAllData(*currentObject, currentObject->GetPath());
                 int index;
@@ -85,7 +85,6 @@ int main() {
                 break;
             }
             default:
-                // Вихід з програми для будь-якого іншого вводу
                 return 0;
         }
     }

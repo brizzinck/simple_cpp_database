@@ -7,17 +7,33 @@
 #include <filesystem>
 
 using namespace std;
-
-// Оголошення класу SaverData для збереження, оновлення та видалення даних бібліотечних об'єктів
+/**
+ * @class SaverData
+ * @brief Клас для збереження даних об'єкта в файл.
+ */
 class SaverData {
 public:
-    // Збереження даних об'єкта бібліотеки у файл
+    /**
+     * @brief Зберігає дані об'єкта в JSON файл.
+     *
+     * @param libraryObject Об'єкт, дані якого будуть збережені.
+     */
     static void Save(LibraryObject &libraryObject);
 
-    // Щновлення даних об'єкта за індексом
+    /**
+     * @brief Оновлює дані об'єкта за індексом у файлі.
+     *
+     * @param object Об'єкт, що оновлюється.
+     * @param index Індекс, за яким буде оновлено дані.
+     */
     static void Update(LibraryObject &object, int index);
 
-    // Видалення даних об'єкта за індексом
+    /**
+     * @brief Видаляє дані об'єкта за індексом у файлі.
+     *
+     * @param object Об'єкт, дані якого будуть видалені.
+     * @param index Індекс, за яким видаляються дані.
+     */
     static void Delete(LibraryObject &object, int index);
 };
 

@@ -1,0 +1,60 @@
+\doxysection{Book.\+h}
+\hypertarget{Book_8h_source}{}\label{Book_8h_source}\index{header/data/Book.h@{header/data/Book.h}}
+\mbox{\hyperlink{Book_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <nlohmann/json\_fwd.hpp>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <nlohmann/json.hpp>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{LibraryObject_8h}{LibraryObject.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ BOOK\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ BOOK\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classBook}{Book}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classLibraryObject_aa2a3de231dc35fbd74a20bd6c5b040f0}{LibraryObject}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classBook_a9a23a2ab129fec10bb944c71f17eebed}{Name}};\ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classBook_ae032d38658e6d2b0ccca7f196883d9d1}{Author}};\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classBook_aeb2be9352a4120194a829c9349ddcee5}{Year}};\ \ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classBook_a6d1e425c17c9140efdb4afaa7445cde1}{ISBN}};\ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classBook_afd1b82ed667eab76c7d354da73cc834f}{Price}};\ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classBook_a1275bb4f628e5d35828aab1d8ac8b25e}{Rating}};\ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classBook_a65d1c9be30a44d893488a0141f345b99}{Genre}};\ \ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBook_a7b7bfdcdcf1e2772c3218af618406dd8}{SetData}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBook_aa41fa1ab3b62959eedf7b82a3173a7a7}{UpdateData}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBook_ad3aadc4f033ce6cde3bfd36e7ce210e1}{DisplayHeaderInfo}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBook_a23797815a41164c6c9b4304b8c31ded5}{DisplayInfo}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBook_a122b23266000fd76fe6f0eca177b44fd}{SelfLoader}}(\textcolor{keyword}{const}\ nlohmann::basic\_json<>\ \&data)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classBook_a24a9230a0542b3e7dc3defc469322355}{GetPath}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classBook_a520a3ef5415cb90e8039dec6b5e5fc11}{GetObjectName}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00070\ \ \ \ \ nlohmann::json\ \mbox{\hyperlink{classBook_a23ffd69bf423525038809b52fb559caf}{GetSaveData}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBook_acb9008bc2df1b574866199c3882eea4a}{SetName}}();}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBook_a031729db52d0faf4726e0661850d3496}{SetAuthor}}();}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBook_a4bd7e75b7d6e2b0aff4a727cd6ae5b70}{SetYear}}();}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBook_a2dc4338af20a2976383c07b725b2c869}{SetPrice}}();}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBook_a22e4acecf71aa70e6fd4c0c2f7763925}{SetRating}}();}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBook_a8e5d08e9b83773878e800b6cf7e9907e}{SetGenre}}();}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBook_a3bf804052c1fead4440b49ee08e1bd97}{SetISBN}}();}
+\DoxyCodeLine{00107\ \};}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//BOOK\_H}}
+
+\end{DoxyCode}

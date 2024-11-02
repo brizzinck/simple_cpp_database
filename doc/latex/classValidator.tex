@@ -1,0 +1,80 @@
+\doxysection{Validator Class Reference}
+\hypertarget{classValidator}{}\label{classValidator}\index{Validator@{Validator}}
+
+
+Клас для валідації введення користувача.  
+
+
+
+
+{\ttfamily \#include $<$Validator.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\static T \mbox{\hyperlink{classValidator_ac8cc06fe3b8d8cd01b7fca7f7d7e2dd8}{Get\+Validated\+Input}} (const string \&prompt, function$<$ bool(const T \&)$>$ validator, const string \&error\+Message)
+\begin{DoxyCompactList}\small\item\em Дженерік функція для отримання валідованого вводу. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{classValidator_a7497739d60471386ec392e1220b32c87}{Get\+Validated\+String}} (const string \&prompt, function$<$ bool(const string \&)$>$ validator, const string \&error\+Message)
+\begin{DoxyCompactList}\small\item\em Отримує рядок, що відповідає заданим критеріям. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Клас для валідації введення користувача. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classValidator_ac8cc06fe3b8d8cd01b7fca7f7d7e2dd8}\index{Validator@{Validator}!GetValidatedInput@{GetValidatedInput}}
+\index{GetValidatedInput@{GetValidatedInput}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{GetValidatedInput()}{GetValidatedInput()}}
+{\footnotesize\ttfamily \label{classValidator_ac8cc06fe3b8d8cd01b7fca7f7d7e2dd8} 
+template$<$typename T $>$ \\
+static T Validator\+::\+Get\+Validated\+Input (\begin{DoxyParamCaption}\item[{const string \&}]{prompt}{, }\item[{function$<$ bool(const T \&)$>$}]{validator}{, }\item[{const string \&}]{error\+Message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Дженерік функція для отримання валідованого вводу. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Тип вводу. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em prompt} & Повідомлення для користувача. \\
+\hline
+{\em validator} & Функція для перевірки, чи введення є коректним. \\
+\hline
+{\em error\+Message} & Повідомлення про помилку. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Введене значення, яке пройшло перевірку. 
+\end{DoxyReturn}
+\Hypertarget{classValidator_a7497739d60471386ec392e1220b32c87}\index{Validator@{Validator}!GetValidatedString@{GetValidatedString}}
+\index{GetValidatedString@{GetValidatedString}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{GetValidatedString()}{GetValidatedString()}}
+{\footnotesize\ttfamily \label{classValidator_a7497739d60471386ec392e1220b32c87} 
+string Validator\+::\+Get\+Validated\+String (\begin{DoxyParamCaption}\item[{const string \&}]{prompt}{, }\item[{function$<$ bool(const string \&)$>$}]{validator}{, }\item[{const string \&}]{error\+Message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Отримує рядок, що відповідає заданим критеріям. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prompt} & Повідомлення для користувача. \\
+\hline
+{\em validator} & Функція перевірки, яка повертає true, якщо введення є коректним. \\
+\hline
+{\em error\+Message} & Повідомлення про помилку у разі невдалої перевірки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Введений рядок, що пройшов перевірку. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+header/logic/\mbox{\hyperlink{Validator_8h}{Validator.\+h}}\item 
+src/logic/\mbox{\hyperlink{Validator_8cpp}{Validator.\+cpp}}\end{DoxyCompactItemize}

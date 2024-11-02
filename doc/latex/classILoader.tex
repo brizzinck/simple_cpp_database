@@ -1,0 +1,52 @@
+\doxysection{ILoader Class Reference}
+\hypertarget{classILoader}{}\label{classILoader}\index{ILoader@{ILoader}}
+
+
+Інтерфейс для завантаження даних об\textquotesingle{}єкта з JSON.  
+
+
+
+
+{\ttfamily \#include $<$ILoader.\+h$>$}
+
+Inheritance diagram for ILoader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classILoader}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classILoader_a40d4b08870cabe2158666d914257c5dc}{Self\+Loader}} (const nlohmann\+::basic\+\_\+json$<$$>$ \&data)=0
+\begin{DoxyCompactList}\small\item\em Завантажує дані з JSON в об\textquotesingle{}єкт. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Інтерфейс для завантаження даних об\textquotesingle{}єкта з JSON. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classILoader_a40d4b08870cabe2158666d914257c5dc}\index{ILoader@{ILoader}!SelfLoader@{SelfLoader}}
+\index{SelfLoader@{SelfLoader}!ILoader@{ILoader}}
+\doxysubsubsection{\texorpdfstring{SelfLoader()}{SelfLoader()}}
+{\footnotesize\ttfamily \label{classILoader_a40d4b08870cabe2158666d914257c5dc} 
+virtual void ILoader\+::\+Self\+Loader (\begin{DoxyParamCaption}\item[{const nlohmann\+::basic\+\_\+json$<$$>$ \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Завантажує дані з JSON в об\textquotesingle{}єкт. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Дані у форматі JSON для завантаження. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classBook_a122b23266000fd76fe6f0eca177b44fd}{Book}}, \mbox{\hyperlink{classLibraryObject_aba89a56d812525e575d197a4af7304ca}{Library\+Object}}, and \mbox{\hyperlink{classMagazine_a8c5684f64d231a7d69f8b183a965578b}{Magazine}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+header/logic/loader/\mbox{\hyperlink{ILoader_8h}{ILoader.\+h}}\end{DoxyCompactItemize}

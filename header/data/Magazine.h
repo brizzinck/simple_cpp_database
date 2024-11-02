@@ -1,41 +1,70 @@
 #ifndef MAGAZINE_H
 #define MAGAZINE_H
+
 #include <nlohmann/json.hpp>
 #include "LibraryObject.h"
 
-// Оголошення класу Magazine, який є похідним від LibraryObject
+using namespace std;
+
+/**
+ * @class Magazine
+ * @brief Клас для представлення журналу в бібліотеці.
+ *
+ * Містить основну інформацію про журнал, таку як назва.
+ */
 class Magazine final : public LibraryObject {
 public:
-    // Поле яке буде збережено
-    string Name;  // Назва журналу
+ string Name;  ///< Назва журналу
 
-    // Отримання назви об'єкта (журнал)
-    string GetObjectName() const override;
+ /**
+  * @brief Отримує назву журналу.
+  * @return Назва об'єкта.
+  */
+ string GetObjectName() const override;
 
-    // Отримання шляху до файлу з даними журналів
-    string GetPath() const override;
+ /**
+  * @brief Отримує шлях до файлу з даними журналів.
+  * @return Шлях до файлу.
+  */
+ string GetPath() const override;
 
-    // Відображення заголовків таблиці про журнал
-    void DisplayHeaderInfo() const override;
+ /**
+  * @brief Відображає заголовки таблиці про журнал.
+  */
+ void DisplayHeaderInfo() const override;
 
-    // Відображення інформації про журнал
-    void DisplayInfo() const override;
+ /**
+  * @brief Відображає інформацію про журнал.
+  */
+ void DisplayInfo() const override;
 
-    // Завантаження даних журналу з JSON
-    void SelfLoader(const nlohmann::basic_json<> &data) override;
+ /**
+  * @brief Завантажує дані журналу з JSON.
+  * @param data Дані у форматі JSON для завантаження.
+  */
+ void SelfLoader(const nlohmann::basic_json<> &data) override;
 
-    // Отримання даних журналу для збереження у форматі JSON
-    nlohmann::json GetSaveData() const override;
+ /**
+  * @brief Отримує дані журналу для збереження у форматі JSON.
+  * @return Дані журналу у форматі JSON.
+  */
+ nlohmann::json GetSaveData() const override;
 
-    // Встановлення даних журналу
-    void SetData() override;
+ /**
+  * @brief Встановлює дані журналу.
+  */
+ void SetData() override;
 
-    // Оновлення даних журналу
-    void UpdateData() override;
+ /**
+  * @brief Оновлює дані журналу.
+  */
+ void UpdateData() override;
 
 private:
-    // Приватний метод для встановлення назви журналу
-    void SetName();
+ /**
+  * @brief Встановлює назву журналу.
+  */
+ void SetName();
 };
 
 #endif //MAGAZINE_H

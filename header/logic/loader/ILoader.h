@@ -1,11 +1,18 @@
-#include <nlohmann/json.hpp>
 #ifndef ILOADER_H
 #define ILOADER_H
 
-// Оголошення інтерфейсу ILoader для завантаження даних з JSON
+#include <nlohmann/json.hpp>
+
+/**
+ * @class ILoader
+ * @brief Інтерфейс для завантаження даних об'єкта з JSON.
+ */
 class ILoader {
 public:
-    // Чисто віртуальний метод для завантаження даних з JSON у об'єкт
+    /**
+     * @brief Завантажує дані з JSON в об'єкт.
+     * @param data Дані у форматі JSON для завантаження.
+     */
     virtual void SelfLoader(const nlohmann::basic_json<> &data) = 0;
 };
 

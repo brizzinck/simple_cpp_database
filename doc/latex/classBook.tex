@@ -1,0 +1,375 @@
+\doxysection{Book Class Reference}
+\hypertarget{classBook}{}\label{classBook}\index{Book@{Book}}
+
+
+Клас для представлення книги в бібліотеці.  
+
+
+
+
+{\ttfamily \#include $<$Book.\+h$>$}
+
+Inheritance diagram for Book\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classBook}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classBook_a7b7bfdcdcf1e2772c3218af618406dd8}{Set\+Data}} () override
+\begin{DoxyCompactList}\small\item\em Встановлює всі дані книги. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBook_aa41fa1ab3b62959eedf7b82a3173a7a7}{Update\+Data}} () override
+\begin{DoxyCompactList}\small\item\em Оновлює дані книги. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBook_ad3aadc4f033ce6cde3bfd36e7ce210e1}{Display\+Header\+Info}} () const override
+\begin{DoxyCompactList}\small\item\em Відображає заголовки інформації про книгу. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBook_a23797815a41164c6c9b4304b8c31ded5}{Display\+Info}} () const override
+\begin{DoxyCompactList}\small\item\em Відображає інформацію про книгу. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBook_a122b23266000fd76fe6f0eca177b44fd}{Self\+Loader}} (const nlohmann\+::basic\+\_\+json$<$$>$ \&data) override
+\begin{DoxyCompactList}\small\item\em Завантажує дані книги з JSON. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classBook_a24a9230a0542b3e7dc3defc469322355}{Get\+Path}} () const override
+\begin{DoxyCompactList}\small\item\em Отримує шлях до файлу з даними про книгу. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classBook_a520a3ef5415cb90e8039dec6b5e5fc11}{Get\+Object\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Отримує назву книги. \end{DoxyCompactList}\item 
+nlohmann\+::json \mbox{\hyperlink{classBook_a23ffd69bf423525038809b52fb559caf}{Get\+Save\+Data}} () const override
+\begin{DoxyCompactList}\small\item\em Отримує дані книги для збереження у форматі JSON. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classLibraryObject}{Library\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLibraryObject_aa2a3de231dc35fbd74a20bd6c5b040f0}{Library\+Object}} ()=default
+\begin{DoxyCompactList}\small\item\em Конструктор за замовчуванням. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLibraryObject_aaacc1553c33dd10585b822e0d0266bbb}{Set\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Встановлює ідентифікатор об\textquotesingle{}єкта. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classLibraryObject_a19675029dd7e0fb50066bbd1d68d0fb1}{\texorpdfstring{$\sim$}{\string~}\+Library\+Object}} ()=default
+\begin{DoxyCompactList}\small\item\em Віртуальний деструктор за замовчуванням. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classISaver}{ISaver}}}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classILoader}{ILoader}}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classBook_a9a23a2ab129fec10bb944c71f17eebed}{Name}}
+\begin{DoxyCompactList}\small\item\em Назва книги \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classBook_ae032d38658e6d2b0ccca7f196883d9d1}{Author}}
+\begin{DoxyCompactList}\small\item\em Автор книги \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBook_aeb2be9352a4120194a829c9349ddcee5}{Year}}
+\begin{DoxyCompactList}\small\item\em Рік видання книги \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classBook_a6d1e425c17c9140efdb4afaa7445cde1}{ISBN}}
+\begin{DoxyCompactList}\small\item\em ISBN книги \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBook_afd1b82ed667eab76c7d354da73cc834f}{Price}}
+\begin{DoxyCompactList}\small\item\em Ціна книги \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBook_a1275bb4f628e5d35828aab1d8ac8b25e}{Rating}}
+\begin{DoxyCompactList}\small\item\em Рейтинг книги \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classBook_a65d1c9be30a44d893488a0141f345b99}{Genre}}
+\begin{DoxyCompactList}\small\item\em Жанр книги \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classLibraryObject}{Library\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classLibraryObject_a65337ca797e0437a506153354f2ec177}{Id}} = 0
+\begin{DoxyCompactList}\small\item\em Ідентифікатор об\textquotesingle{}єкта \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classBook_acb9008bc2df1b574866199c3882eea4a}{Set\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Встановлює назву книги. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBook_a031729db52d0faf4726e0661850d3496}{Set\+Author}} ()
+\begin{DoxyCompactList}\small\item\em Встановлює автора книги. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBook_a4bd7e75b7d6e2b0aff4a727cd6ae5b70}{Set\+Year}} ()
+\begin{DoxyCompactList}\small\item\em Встановлює рік видання книги. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBook_a2dc4338af20a2976383c07b725b2c869}{Set\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Встановлює ціну книги. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBook_a22e4acecf71aa70e6fd4c0c2f7763925}{Set\+Rating}} ()
+\begin{DoxyCompactList}\small\item\em Встановлює рейтинг книги. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBook_a8e5d08e9b83773878e800b6cf7e9907e}{Set\+Genre}} ()
+\begin{DoxyCompactList}\small\item\em Встановлює жанр книги. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBook_a3bf804052c1fead4440b49ee08e1bd97}{Set\+ISBN}} ()
+\begin{DoxyCompactList}\small\item\em Встановлює ISBN книги. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classLibraryObject}{Library\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\static void \mbox{\hyperlink{classLibraryObject_a081e2746131f28f60280a8e959855c65}{Change\+Data}} (const string \&name, T \&value, function$<$ void()$>$ set\+Data)
+\begin{DoxyCompactList}\small\item\em Змінює значення поля об\textquotesingle{}єкта. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Клас для представлення книги в бібліотеці. 
+
+Зберігає основну інформацію про книгу, таку як назва, автор, рік видання, ISBN, ціна, рейтинг та жанр. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classBook_ad3aadc4f033ce6cde3bfd36e7ce210e1}\index{Book@{Book}!DisplayHeaderInfo@{DisplayHeaderInfo}}
+\index{DisplayHeaderInfo@{DisplayHeaderInfo}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{DisplayHeaderInfo()}{DisplayHeaderInfo()}}
+{\footnotesize\ttfamily \label{classBook_ad3aadc4f033ce6cde3bfd36e7ce210e1} 
+void Book\+::\+Display\+Header\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Відображає заголовки інформації про книгу. 
+
+
+
+Implements \mbox{\hyperlink{classLibraryObject_acb9733120e963a38e41acd8e2d21b924}{Library\+Object}}.
+
+\Hypertarget{classBook_a23797815a41164c6c9b4304b8c31ded5}\index{Book@{Book}!DisplayInfo@{DisplayInfo}}
+\index{DisplayInfo@{DisplayInfo}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{DisplayInfo()}{DisplayInfo()}}
+{\footnotesize\ttfamily \label{classBook_a23797815a41164c6c9b4304b8c31ded5} 
+void Book\+::\+Display\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Відображає інформацію про книгу. 
+
+
+
+Implements \mbox{\hyperlink{classLibraryObject_a6266e5c3b9eaa09e1f5e76e76eeb8021}{Library\+Object}}.
+
+\Hypertarget{classBook_a520a3ef5415cb90e8039dec6b5e5fc11}\index{Book@{Book}!GetObjectName@{GetObjectName}}
+\index{GetObjectName@{GetObjectName}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{GetObjectName()}{GetObjectName()}}
+{\footnotesize\ttfamily \label{classBook_a520a3ef5415cb90e8039dec6b5e5fc11} 
+string Book\+::\+Get\+Object\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Отримує назву книги. 
+
+\begin{DoxyReturn}{Returns}
+Назва об\textquotesingle{}єкта. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classLibraryObject_a7439cc1a74723435561bb2591f193bfb}{Library\+Object}}.
+
+\Hypertarget{classBook_a24a9230a0542b3e7dc3defc469322355}\index{Book@{Book}!GetPath@{GetPath}}
+\index{GetPath@{GetPath}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{GetPath()}{GetPath()}}
+{\footnotesize\ttfamily \label{classBook_a24a9230a0542b3e7dc3defc469322355} 
+string Book\+::\+Get\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Отримує шлях до файлу з даними про книгу. 
+
+\begin{DoxyReturn}{Returns}
+Шлях до файлу. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classLibraryObject_ad000ca64e38498dafe1f211c90082ff1}{Library\+Object}}.
+
+\Hypertarget{classBook_a23ffd69bf423525038809b52fb559caf}\index{Book@{Book}!GetSaveData@{GetSaveData}}
+\index{GetSaveData@{GetSaveData}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{GetSaveData()}{GetSaveData()}}
+{\footnotesize\ttfamily \label{classBook_a23ffd69bf423525038809b52fb559caf} 
+nlohmann\+::json Book\+::\+Get\+Save\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Отримує дані книги для збереження у форматі JSON. 
+
+\begin{DoxyReturn}{Returns}
+Дані книги у форматі JSON. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLibraryObject_a8872f79dd7cda9924d1f672b25f0e708}{Library\+Object}}.
+
+\Hypertarget{classBook_a122b23266000fd76fe6f0eca177b44fd}\index{Book@{Book}!SelfLoader@{SelfLoader}}
+\index{SelfLoader@{SelfLoader}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{SelfLoader()}{SelfLoader()}}
+{\footnotesize\ttfamily \label{classBook_a122b23266000fd76fe6f0eca177b44fd} 
+void Book\+::\+Self\+Loader (\begin{DoxyParamCaption}\item[{const nlohmann\+::basic\+\_\+json$<$$>$ \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Завантажує дані книги з JSON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Дані у форматі JSON для завантаження. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classLibraryObject_aba89a56d812525e575d197a4af7304ca}{Library\+Object}}.
+
+\Hypertarget{classBook_a031729db52d0faf4726e0661850d3496}\index{Book@{Book}!SetAuthor@{SetAuthor}}
+\index{SetAuthor@{SetAuthor}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{SetAuthor()}{SetAuthor()}}
+{\footnotesize\ttfamily \label{classBook_a031729db52d0faf4726e0661850d3496} 
+void Book\+::\+Set\+Author (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Встановлює автора книги. 
+
+\Hypertarget{classBook_a7b7bfdcdcf1e2772c3218af618406dd8}\index{Book@{Book}!SetData@{SetData}}
+\index{SetData@{SetData}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{SetData()}{SetData()}}
+{\footnotesize\ttfamily \label{classBook_a7b7bfdcdcf1e2772c3218af618406dd8} 
+void Book\+::\+Set\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Встановлює всі дані книги. 
+
+
+
+Implements \mbox{\hyperlink{classLibraryObject_aed4cbede98a028f56655d37780793376}{Library\+Object}}.
+
+\Hypertarget{classBook_a8e5d08e9b83773878e800b6cf7e9907e}\index{Book@{Book}!SetGenre@{SetGenre}}
+\index{SetGenre@{SetGenre}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{SetGenre()}{SetGenre()}}
+{\footnotesize\ttfamily \label{classBook_a8e5d08e9b83773878e800b6cf7e9907e} 
+void Book\+::\+Set\+Genre (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Встановлює жанр книги. 
+
+\Hypertarget{classBook_a3bf804052c1fead4440b49ee08e1bd97}\index{Book@{Book}!SetISBN@{SetISBN}}
+\index{SetISBN@{SetISBN}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{SetISBN()}{SetISBN()}}
+{\footnotesize\ttfamily \label{classBook_a3bf804052c1fead4440b49ee08e1bd97} 
+void Book\+::\+Set\+ISBN (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Встановлює ISBN книги. 
+
+\Hypertarget{classBook_acb9008bc2df1b574866199c3882eea4a}\index{Book@{Book}!SetName@{SetName}}
+\index{SetName@{SetName}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{SetName()}{SetName()}}
+{\footnotesize\ttfamily \label{classBook_acb9008bc2df1b574866199c3882eea4a} 
+void Book\+::\+Set\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Встановлює назву книги. 
+
+\Hypertarget{classBook_a2dc4338af20a2976383c07b725b2c869}\index{Book@{Book}!SetPrice@{SetPrice}}
+\index{SetPrice@{SetPrice}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{SetPrice()}{SetPrice()}}
+{\footnotesize\ttfamily \label{classBook_a2dc4338af20a2976383c07b725b2c869} 
+void Book\+::\+Set\+Price (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Встановлює ціну книги. 
+
+\Hypertarget{classBook_a22e4acecf71aa70e6fd4c0c2f7763925}\index{Book@{Book}!SetRating@{SetRating}}
+\index{SetRating@{SetRating}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{SetRating()}{SetRating()}}
+{\footnotesize\ttfamily \label{classBook_a22e4acecf71aa70e6fd4c0c2f7763925} 
+void Book\+::\+Set\+Rating (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Встановлює рейтинг книги. 
+
+\Hypertarget{classBook_a4bd7e75b7d6e2b0aff4a727cd6ae5b70}\index{Book@{Book}!SetYear@{SetYear}}
+\index{SetYear@{SetYear}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{SetYear()}{SetYear()}}
+{\footnotesize\ttfamily \label{classBook_a4bd7e75b7d6e2b0aff4a727cd6ae5b70} 
+void Book\+::\+Set\+Year (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Встановлює рік видання книги. 
+
+\Hypertarget{classBook_aa41fa1ab3b62959eedf7b82a3173a7a7}\index{Book@{Book}!UpdateData@{UpdateData}}
+\index{UpdateData@{UpdateData}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{UpdateData()}{UpdateData()}}
+{\footnotesize\ttfamily \label{classBook_aa41fa1ab3b62959eedf7b82a3173a7a7} 
+void Book\+::\+Update\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Оновлює дані книги. 
+
+
+
+Implements \mbox{\hyperlink{classLibraryObject_aa07a58c2a03b97cbf327d21d64b5fcc2}{Library\+Object}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classBook_ae032d38658e6d2b0ccca7f196883d9d1}\index{Book@{Book}!Author@{Author}}
+\index{Author@{Author}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{Author}{Author}}
+{\footnotesize\ttfamily \label{classBook_ae032d38658e6d2b0ccca7f196883d9d1} 
+string Book\+::\+Author}
+
+
+
+Автор книги 
+
+\Hypertarget{classBook_a65d1c9be30a44d893488a0141f345b99}\index{Book@{Book}!Genre@{Genre}}
+\index{Genre@{Genre}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{Genre}{Genre}}
+{\footnotesize\ttfamily \label{classBook_a65d1c9be30a44d893488a0141f345b99} 
+string Book\+::\+Genre}
+
+
+
+Жанр книги 
+
+\Hypertarget{classBook_a6d1e425c17c9140efdb4afaa7445cde1}\index{Book@{Book}!ISBN@{ISBN}}
+\index{ISBN@{ISBN}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{ISBN}{ISBN}}
+{\footnotesize\ttfamily \label{classBook_a6d1e425c17c9140efdb4afaa7445cde1} 
+string Book\+::\+ISBN}
+
+
+
+ISBN книги 
+
+\Hypertarget{classBook_a9a23a2ab129fec10bb944c71f17eebed}\index{Book@{Book}!Name@{Name}}
+\index{Name@{Name}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{classBook_a9a23a2ab129fec10bb944c71f17eebed} 
+string Book\+::\+Name}
+
+
+
+Назва книги 
+
+\Hypertarget{classBook_afd1b82ed667eab76c7d354da73cc834f}\index{Book@{Book}!Price@{Price}}
+\index{Price@{Price}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{Price}{Price}}
+{\footnotesize\ttfamily \label{classBook_afd1b82ed667eab76c7d354da73cc834f} 
+float Book\+::\+Price}
+
+
+
+Ціна книги 
+
+\Hypertarget{classBook_a1275bb4f628e5d35828aab1d8ac8b25e}\index{Book@{Book}!Rating@{Rating}}
+\index{Rating@{Rating}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{Rating}{Rating}}
+{\footnotesize\ttfamily \label{classBook_a1275bb4f628e5d35828aab1d8ac8b25e} 
+float Book\+::\+Rating}
+
+
+
+Рейтинг книги 
+
+\Hypertarget{classBook_aeb2be9352a4120194a829c9349ddcee5}\index{Book@{Book}!Year@{Year}}
+\index{Year@{Year}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{Year}{Year}}
+{\footnotesize\ttfamily \label{classBook_aeb2be9352a4120194a829c9349ddcee5} 
+int Book\+::\+Year}
+
+
+
+Рік видання книги 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+header/data/\mbox{\hyperlink{Book_8h}{Book.\+h}}\item 
+src/data/\mbox{\hyperlink{Book_8cpp}{Book.\+cpp}}\end{DoxyCompactItemize}

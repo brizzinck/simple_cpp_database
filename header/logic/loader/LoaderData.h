@@ -2,14 +2,29 @@
 #define LOADERDATA_H
 #include "Book.h"
 
-// Оголошення класу LoaderData для завантаження даних бібліотечних об'єктів
+/**
+ * @class LoaderData
+ * @brief Клас для завантаження даних об'єкта з файлу.
+ */
 class LoaderData {
 public:
-    // Метод для завантаження всіх даних об'єкта в консоль з файлу
+    /**
+     * @brief Завантажує всі дані об'єкта з JSON файлу та виводить їх у консоль.
+     *
+     * @param object Об'єкт для завантаження даних.
+     * @param name Ім'я файлу.
+     */
     static void LoadInConsoleAllData(LibraryObject &object, string name);
 
-    // Метод для завантаження даних об'єкта за індексом в консоль
+    /**
+     * @brief Завантажує дані об'єкта за індексом та виводить їх у консоль.
+     *
+     * @param object Об'єкт для завантаження даних.
+     * @param index Індекс, за яким завантажуються дані.
+     * @return true, якщо дані знайдено, інакше false.
+     */
     static bool LoadInConsoleDataByIndex(LibraryObject &object, int index);
 };
+
 
 #endif //LOADERDATA_H

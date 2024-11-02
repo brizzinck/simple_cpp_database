@@ -1,0 +1,67 @@
+\doxysection{Loader\+Data Class Reference}
+\hypertarget{classLoaderData}{}\label{classLoaderData}\index{LoaderData@{LoaderData}}
+
+
+Клас для завантаження даних об\textquotesingle{}єкта з файлу.  
+
+
+
+
+{\ttfamily \#include $<$Loader\+Data.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classLoaderData_a35a21ae9e49ca36dc5bf8b0b83da0090}{Load\+In\+Console\+All\+Data}} (\mbox{\hyperlink{classLibraryObject}{Library\+Object}} \&object, string name)
+\begin{DoxyCompactList}\small\item\em Завантажує всі дані об\textquotesingle{}єкта з JSON файлу та виводить їх у консоль. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classLoaderData_a71f276ede51cb661347a147995c56b8f}{Load\+In\+Console\+Data\+By\+Index}} (\mbox{\hyperlink{classLibraryObject}{Library\+Object}} \&object, int index)
+\begin{DoxyCompactList}\small\item\em Завантажує дані об\textquotesingle{}єкта за індексом та виводить їх у консоль. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Клас для завантаження даних об\textquotesingle{}єкта з файлу. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classLoaderData_a35a21ae9e49ca36dc5bf8b0b83da0090}\index{LoaderData@{LoaderData}!LoadInConsoleAllData@{LoadInConsoleAllData}}
+\index{LoadInConsoleAllData@{LoadInConsoleAllData}!LoaderData@{LoaderData}}
+\doxysubsubsection{\texorpdfstring{LoadInConsoleAllData()}{LoadInConsoleAllData()}}
+{\footnotesize\ttfamily \label{classLoaderData_a35a21ae9e49ca36dc5bf8b0b83da0090} 
+void Loader\+Data\+::\+Load\+In\+Console\+All\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLibraryObject}{Library\+Object}} \&}]{object}{, }\item[{string}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Завантажує всі дані об\textquotesingle{}єкта з JSON файлу та виводить їх у консоль. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & Об\textquotesingle{}єкт для завантаження даних. \\
+\hline
+{\em name} & Ім\textquotesingle{}я файлу. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classLoaderData_a71f276ede51cb661347a147995c56b8f}\index{LoaderData@{LoaderData}!LoadInConsoleDataByIndex@{LoadInConsoleDataByIndex}}
+\index{LoadInConsoleDataByIndex@{LoadInConsoleDataByIndex}!LoaderData@{LoaderData}}
+\doxysubsubsection{\texorpdfstring{LoadInConsoleDataByIndex()}{LoadInConsoleDataByIndex()}}
+{\footnotesize\ttfamily \label{classLoaderData_a71f276ede51cb661347a147995c56b8f} 
+bool Loader\+Data\+::\+Load\+In\+Console\+Data\+By\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLibraryObject}{Library\+Object}} \&}]{object}{, }\item[{int}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Завантажує дані об\textquotesingle{}єкта за індексом та виводить їх у консоль. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & Об\textquotesingle{}єкт для завантаження даних. \\
+\hline
+{\em index} & Індекс, за яким завантажуються дані. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, якщо дані знайдено, інакше false. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+header/logic/loader/\mbox{\hyperlink{LoaderData_8h}{Loader\+Data.\+h}}\item 
+src/logic/loader/\mbox{\hyperlink{LoaderData_8cpp}{Loader\+Data.\+cpp}}\end{DoxyCompactItemize}

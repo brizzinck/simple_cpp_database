@@ -5,7 +5,6 @@
 
 using namespace std;
 
-// Спеціалізація для вводу рядків із використанням getline
 string Validator::GetValidatedString(const string& prompt, function<bool(const string&)> validator, const string& errorMessage) {
     string value;
     while (true) {

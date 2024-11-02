@@ -1,0 +1,81 @@
+\doxysection{Saver\+Data Class Reference}
+\hypertarget{classSaverData}{}\label{classSaverData}\index{SaverData@{SaverData}}
+
+
+Клас для збереження даних об\textquotesingle{}єкта в файл.  
+
+
+
+
+{\ttfamily \#include $<$Saver\+Data.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classSaverData_ae86549bcfe8f1357337bdce97f0499f5}{Save}} (\mbox{\hyperlink{classLibraryObject}{Library\+Object}} \&library\+Object)
+\begin{DoxyCompactList}\small\item\em Зберігає дані об\textquotesingle{}єкта в JSON файл. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classSaverData_a1dcb68fd9ccd7f837669e7fc6c06307e}{Update}} (\mbox{\hyperlink{classLibraryObject}{Library\+Object}} \&object, int index)
+\begin{DoxyCompactList}\small\item\em Оновлює дані об\textquotesingle{}єкта за індексом у файлі. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classSaverData_a24bb3bd8dcc3ae8b5bca990bae3b8b5a}{Delete}} (\mbox{\hyperlink{classLibraryObject}{Library\+Object}} \&object, int index)
+\begin{DoxyCompactList}\small\item\em Видаляє дані об\textquotesingle{}єкта за індексом у файлі. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Клас для збереження даних об\textquotesingle{}єкта в файл. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSaverData_a24bb3bd8dcc3ae8b5bca990bae3b8b5a}\index{SaverData@{SaverData}!Delete@{Delete}}
+\index{Delete@{Delete}!SaverData@{SaverData}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily \label{classSaverData_a24bb3bd8dcc3ae8b5bca990bae3b8b5a} 
+void Saver\+Data\+::\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLibraryObject}{Library\+Object}} \&}]{object}{, }\item[{int}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Видаляє дані об\textquotesingle{}єкта за індексом у файлі. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & Об\textquotesingle{}єкт, дані якого будуть видалені. \\
+\hline
+{\em index} & Індекс, за яким видаляються дані. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classSaverData_ae86549bcfe8f1357337bdce97f0499f5}\index{SaverData@{SaverData}!Save@{Save}}
+\index{Save@{Save}!SaverData@{SaverData}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily \label{classSaverData_ae86549bcfe8f1357337bdce97f0499f5} 
+void Saver\+Data\+::\+Save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLibraryObject}{Library\+Object}} \&}]{library\+Object}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Зберігає дані об\textquotesingle{}єкта в JSON файл. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em library\+Object} & Об\textquotesingle{}єкт, дані якого будуть збережені. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classSaverData_a1dcb68fd9ccd7f837669e7fc6c06307e}\index{SaverData@{SaverData}!Update@{Update}}
+\index{Update@{Update}!SaverData@{SaverData}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{classSaverData_a1dcb68fd9ccd7f837669e7fc6c06307e} 
+void Saver\+Data\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLibraryObject}{Library\+Object}} \&}]{object}{, }\item[{int}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Оновлює дані об\textquotesingle{}єкта за індексом у файлі. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & Об\textquotesingle{}єкт, що оновлюється. \\
+\hline
+{\em index} & Індекс, за яким буде оновлено дані. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+header/logic/saver/\mbox{\hyperlink{SaverData_8h}{Saver\+Data.\+h}}\item 
+src/logic/saver/\mbox{\hyperlink{SaverData_8cpp}{Saver\+Data.\+cpp}}\end{DoxyCompactItemize}

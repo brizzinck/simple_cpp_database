@@ -1,0 +1,37 @@
+\doxysection{Validator.\+h}
+\hypertarget{Validator_8h_source}{}\label{Validator_8h_source}\index{header/logic/Validator.h@{header/logic/Validator.h}}
+\mbox{\hyperlink{Validator_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ VALIDATOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ VALIDATOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <limits>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classValidator}{Validator}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{static}\ T\ \mbox{\hyperlink{classValidator_ac8cc06fe3b8d8cd01b7fca7f7d7e2dd8}{GetValidatedInput}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&prompt,\ function<\textcolor{keywordtype}{bool}(\textcolor{keyword}{const}\ T\ \&)>\ validator,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&errorMessage)\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ T\ value;}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ prompt\ <<\ endl;}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ cin\ >>\ value;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cin.good()\ \&\&\ validator(value))}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ cin.clear();}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ cin.ignore(numeric\_limits<streamsize>::max(),\ \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ errorMessage\ <<\ endl;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ value;}
+\DoxyCodeLine{00039\ \ \ \ \ \}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classValidator_a7497739d60471386ec392e1220b32c87}{GetValidatedString}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&prompt,\ function<\textcolor{keywordtype}{bool}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&)>\ validator,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&errorMessage);}
+\DoxyCodeLine{00050\ \};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//VALIDATOR\_H}}
+
+\end{DoxyCode}

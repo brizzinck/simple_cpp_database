@@ -1,0 +1,278 @@
+\doxysection{Library\+Object Class Reference}
+\hypertarget{classLibraryObject}{}\label{classLibraryObject}\index{LibraryObject@{LibraryObject}}
+
+
+Базовий клас для всіх бібліотечних об\textquotesingle{}єктів.  
+
+
+
+
+{\ttfamily \#include $<$Library\+Object.\+h$>$}
+
+Inheritance diagram for Library\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classLibraryObject}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLibraryObject_aa2a3de231dc35fbd74a20bd6c5b040f0}{Library\+Object}} ()=default
+\begin{DoxyCompactList}\small\item\em Конструктор за замовчуванням. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLibraryObject_acb9733120e963a38e41acd8e2d21b924}{Display\+Header\+Info}} () const =0
+\begin{DoxyCompactList}\small\item\em Відображає заголовки інформації про об\textquotesingle{}єкт. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLibraryObject_a6266e5c3b9eaa09e1f5e76e76eeb8021}{Display\+Info}} () const =0
+\begin{DoxyCompactList}\small\item\em Відображає інформацію про об\textquotesingle{}єкт. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLibraryObject_aba89a56d812525e575d197a4af7304ca}{Self\+Loader}} (const nlohmann\+::basic\+\_\+json$<$$>$ \&data) override=0
+\begin{DoxyCompactList}\small\item\em Завантажує дані об\textquotesingle{}єкта з JSON. \end{DoxyCompactList}\item 
+nlohmann\+::json \mbox{\hyperlink{classLibraryObject_a8872f79dd7cda9924d1f672b25f0e708}{Get\+Save\+Data}} () const override=0
+\begin{DoxyCompactList}\small\item\em Отримує дані об\textquotesingle{}єкта для збереження у форматі JSON. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classLibraryObject_ad000ca64e38498dafe1f211c90082ff1}{Get\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Отримує шлях до файлу. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classLibraryObject_a7439cc1a74723435561bb2591f193bfb}{Get\+Object\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Отримує назву об\textquotesingle{}єкта. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLibraryObject_aed4cbede98a028f56655d37780793376}{Set\+Data}} ()=0
+\begin{DoxyCompactList}\small\item\em Встановлює дані об\textquotesingle{}єкта. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLibraryObject_aa07a58c2a03b97cbf327d21d64b5fcc2}{Update\+Data}} ()=0
+\begin{DoxyCompactList}\small\item\em Оновлює дані об\textquotesingle{}єкта. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLibraryObject_aaacc1553c33dd10585b822e0d0266bbb}{Set\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Встановлює ідентифікатор об\textquotesingle{}єкта. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classLibraryObject_a19675029dd7e0fb50066bbd1d68d0fb1}{\texorpdfstring{$\sim$}{\string~}\+Library\+Object}} ()=default
+\begin{DoxyCompactList}\small\item\em Віртуальний деструктор за замовчуванням. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classISaver}{ISaver}}}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classILoader}{ILoader}}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\static void \mbox{\hyperlink{classLibraryObject_a081e2746131f28f60280a8e959855c65}{Change\+Data}} (const string \&name, T \&value, function$<$ void()$>$ set\+Data)
+\begin{DoxyCompactList}\small\item\em Змінює значення поля об\textquotesingle{}єкта. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classLibraryObject_a65337ca797e0437a506153354f2ec177}{Id}} = 0
+\begin{DoxyCompactList}\small\item\em Ідентифікатор об\textquotesingle{}єкта \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Базовий клас для всіх бібліотечних об\textquotesingle{}єктів. 
+
+Імплементує інтерфейси \doxylink{classISaver}{ISaver} та \doxylink{classILoader}{ILoader} для збереження і завантаження інформації. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classLibraryObject_aa2a3de231dc35fbd74a20bd6c5b040f0}\index{LibraryObject@{LibraryObject}!LibraryObject@{LibraryObject}}
+\index{LibraryObject@{LibraryObject}!LibraryObject@{LibraryObject}}
+\doxysubsubsection{\texorpdfstring{LibraryObject()}{LibraryObject()}}
+{\footnotesize\ttfamily \label{classLibraryObject_aa2a3de231dc35fbd74a20bd6c5b040f0} 
+Library\+Object\+::\+Library\+Object (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Конструктор за замовчуванням. 
+
+\Hypertarget{classLibraryObject_a19675029dd7e0fb50066bbd1d68d0fb1}\index{LibraryObject@{LibraryObject}!````~LibraryObject@{\texorpdfstring{$\sim$}{\string~}LibraryObject}}
+\index{````~LibraryObject@{\texorpdfstring{$\sim$}{\string~}LibraryObject}!LibraryObject@{LibraryObject}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}LibraryObject()}{\string~LibraryObject()}}
+{\footnotesize\ttfamily \label{classLibraryObject_a19675029dd7e0fb50066bbd1d68d0fb1} 
+virtual Library\+Object\+::\texorpdfstring{$\sim$}{\string~}\+Library\+Object (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Віртуальний деструктор за замовчуванням. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classLibraryObject_a081e2746131f28f60280a8e959855c65}\index{LibraryObject@{LibraryObject}!ChangeData@{ChangeData}}
+\index{ChangeData@{ChangeData}!LibraryObject@{LibraryObject}}
+\doxysubsubsection{\texorpdfstring{ChangeData()}{ChangeData()}}
+{\footnotesize\ttfamily \label{classLibraryObject_a081e2746131f28f60280a8e959855c65} 
+template$<$typename T $>$ \\
+void Library\+Object\+::\+Change\+Data (\begin{DoxyParamCaption}\item[{const string \&}]{name}{, }\item[{T \&}]{value}{, }\item[{function$<$ void()$>$}]{set\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Змінює значення поля об\textquotesingle{}єкта. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Тип значення поля. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Назва поля для зміни. \\
+\hline
+{\em value} & Поточне значення поля. \\
+\hline
+{\em set\+Data} & Функція для встановлення нового значення. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classLibraryObject_acb9733120e963a38e41acd8e2d21b924}\index{LibraryObject@{LibraryObject}!DisplayHeaderInfo@{DisplayHeaderInfo}}
+\index{DisplayHeaderInfo@{DisplayHeaderInfo}!LibraryObject@{LibraryObject}}
+\doxysubsubsection{\texorpdfstring{DisplayHeaderInfo()}{DisplayHeaderInfo()}}
+{\footnotesize\ttfamily \label{classLibraryObject_acb9733120e963a38e41acd8e2d21b924} 
+virtual void Library\+Object\+::\+Display\+Header\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Відображає заголовки інформації про об\textquotesingle{}єкт. 
+
+
+
+Implemented in \mbox{\hyperlink{classBook_ad3aadc4f033ce6cde3bfd36e7ce210e1}{Book}}, and \mbox{\hyperlink{classMagazine_a358a2e28b1aa7872470cd5f0d0acf3f3}{Magazine}}.
+
+\Hypertarget{classLibraryObject_a6266e5c3b9eaa09e1f5e76e76eeb8021}\index{LibraryObject@{LibraryObject}!DisplayInfo@{DisplayInfo}}
+\index{DisplayInfo@{DisplayInfo}!LibraryObject@{LibraryObject}}
+\doxysubsubsection{\texorpdfstring{DisplayInfo()}{DisplayInfo()}}
+{\footnotesize\ttfamily \label{classLibraryObject_a6266e5c3b9eaa09e1f5e76e76eeb8021} 
+virtual void Library\+Object\+::\+Display\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Відображає інформацію про об\textquotesingle{}єкт. 
+
+
+
+Implemented in \mbox{\hyperlink{classBook_a23797815a41164c6c9b4304b8c31ded5}{Book}}, and \mbox{\hyperlink{classMagazine_ab4b8488ab546ccbf218c1d36881fdcb5}{Magazine}}.
+
+\Hypertarget{classLibraryObject_a7439cc1a74723435561bb2591f193bfb}\index{LibraryObject@{LibraryObject}!GetObjectName@{GetObjectName}}
+\index{GetObjectName@{GetObjectName}!LibraryObject@{LibraryObject}}
+\doxysubsubsection{\texorpdfstring{GetObjectName()}{GetObjectName()}}
+{\footnotesize\ttfamily \label{classLibraryObject_a7439cc1a74723435561bb2591f193bfb} 
+string Library\+Object\+::\+Get\+Object\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Отримує назву об\textquotesingle{}єкта. 
+
+\begin{DoxyReturn}{Returns}
+Назва об\textquotesingle{}єкта. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classBook_a520a3ef5415cb90e8039dec6b5e5fc11}{Book}}, and \mbox{\hyperlink{classMagazine_abe08e09b156c7d4d29f30fad4cc468f0}{Magazine}}.
+
+\Hypertarget{classLibraryObject_ad000ca64e38498dafe1f211c90082ff1}\index{LibraryObject@{LibraryObject}!GetPath@{GetPath}}
+\index{GetPath@{GetPath}!LibraryObject@{LibraryObject}}
+\doxysubsubsection{\texorpdfstring{GetPath()}{GetPath()}}
+{\footnotesize\ttfamily \label{classLibraryObject_ad000ca64e38498dafe1f211c90082ff1} 
+string Library\+Object\+::\+Get\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Отримує шлях до файлу. 
+
+\begin{DoxyReturn}{Returns}
+Шлях до файлу. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classBook_a24a9230a0542b3e7dc3defc469322355}{Book}}, and \mbox{\hyperlink{classMagazine_a1460a8725fbdb349da8a4f42cc43cca8}{Magazine}}.
+
+\Hypertarget{classLibraryObject_a8872f79dd7cda9924d1f672b25f0e708}\index{LibraryObject@{LibraryObject}!GetSaveData@{GetSaveData}}
+\index{GetSaveData@{GetSaveData}!LibraryObject@{LibraryObject}}
+\doxysubsubsection{\texorpdfstring{GetSaveData()}{GetSaveData()}}
+{\footnotesize\ttfamily \label{classLibraryObject_a8872f79dd7cda9924d1f672b25f0e708} 
+nlohmann\+::json Library\+Object\+::\+Get\+Save\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+Отримує дані об\textquotesingle{}єкта для збереження у форматі JSON. 
+
+\begin{DoxyReturn}{Returns}
+Дані об\textquotesingle{}єкта у форматі JSON. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classISaver_ab2e4afd9dbd13f877690bd0845301b88}{ISaver}}.
+
+
+
+Implemented in \mbox{\hyperlink{classBook_a23ffd69bf423525038809b52fb559caf}{Book}}, and \mbox{\hyperlink{classMagazine_aab554c6bfdf23b22b1f0c3a1c762c463}{Magazine}}.
+
+\Hypertarget{classLibraryObject_aba89a56d812525e575d197a4af7304ca}\index{LibraryObject@{LibraryObject}!SelfLoader@{SelfLoader}}
+\index{SelfLoader@{SelfLoader}!LibraryObject@{LibraryObject}}
+\doxysubsubsection{\texorpdfstring{SelfLoader()}{SelfLoader()}}
+{\footnotesize\ttfamily \label{classLibraryObject_aba89a56d812525e575d197a4af7304ca} 
+void Library\+Object\+::\+Self\+Loader (\begin{DoxyParamCaption}\item[{const nlohmann\+::basic\+\_\+json$<$$>$ \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+Завантажує дані об\textquotesingle{}єкта з JSON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Дані у форматі JSON для завантаження. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classILoader_a40d4b08870cabe2158666d914257c5dc}{ILoader}}.
+
+
+
+Implemented in \mbox{\hyperlink{classBook_a122b23266000fd76fe6f0eca177b44fd}{Book}}, and \mbox{\hyperlink{classMagazine_a8c5684f64d231a7d69f8b183a965578b}{Magazine}}.
+
+\Hypertarget{classLibraryObject_aed4cbede98a028f56655d37780793376}\index{LibraryObject@{LibraryObject}!SetData@{SetData}}
+\index{SetData@{SetData}!LibraryObject@{LibraryObject}}
+\doxysubsubsection{\texorpdfstring{SetData()}{SetData()}}
+{\footnotesize\ttfamily \label{classLibraryObject_aed4cbede98a028f56655d37780793376} 
+virtual void Library\+Object\+::\+Set\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Встановлює дані об\textquotesingle{}єкта. 
+
+
+
+Implemented in \mbox{\hyperlink{classBook_a7b7bfdcdcf1e2772c3218af618406dd8}{Book}}, and \mbox{\hyperlink{classMagazine_aa8a1cd718a1820efbc68d2e3b476cfc2}{Magazine}}.
+
+\Hypertarget{classLibraryObject_aaacc1553c33dd10585b822e0d0266bbb}\index{LibraryObject@{LibraryObject}!SetId@{SetId}}
+\index{SetId@{SetId}!LibraryObject@{LibraryObject}}
+\doxysubsubsection{\texorpdfstring{SetId()}{SetId()}}
+{\footnotesize\ttfamily \label{classLibraryObject_aaacc1553c33dd10585b822e0d0266bbb} 
+void Library\+Object\+::\+Set\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Встановлює ідентифікатор об\textquotesingle{}єкта. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Ідентифікатор для встановлення. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classLibraryObject_aa07a58c2a03b97cbf327d21d64b5fcc2}\index{LibraryObject@{LibraryObject}!UpdateData@{UpdateData}}
+\index{UpdateData@{UpdateData}!LibraryObject@{LibraryObject}}
+\doxysubsubsection{\texorpdfstring{UpdateData()}{UpdateData()}}
+{\footnotesize\ttfamily \label{classLibraryObject_aa07a58c2a03b97cbf327d21d64b5fcc2} 
+virtual void Library\+Object\+::\+Update\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Оновлює дані об\textquotesingle{}єкта. 
+
+
+
+Implemented in \mbox{\hyperlink{classBook_aa41fa1ab3b62959eedf7b82a3173a7a7}{Book}}, and \mbox{\hyperlink{classMagazine_a9473f6a2393c4eac80fb99fd29bbdb97}{Magazine}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classLibraryObject_a65337ca797e0437a506153354f2ec177}\index{LibraryObject@{LibraryObject}!Id@{Id}}
+\index{Id@{Id}!LibraryObject@{LibraryObject}}
+\doxysubsubsection{\texorpdfstring{Id}{Id}}
+{\footnotesize\ttfamily \label{classLibraryObject_a65337ca797e0437a506153354f2ec177} 
+int Library\+Object\+::\+Id = 0}
+
+
+
+Ідентифікатор об\textquotesingle{}єкта 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+header/data/\mbox{\hyperlink{LibraryObject_8h}{Library\+Object.\+h}}\item 
+src/data/\mbox{\hyperlink{LibraryObject_8cpp}{Library\+Object.\+cpp}}\end{DoxyCompactItemize}
